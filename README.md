@@ -4,6 +4,7 @@
 
 > Gokturk Aytug Akarlar, Chimera Research Initiative
 
+[![GitHub](https://img.shields.io/badge/GitHub-akarlaraytu%2Ftrajectory--commitment-181717?logo=github)](https://github.com/akarlaraytu/trajectory-commitment)
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/hallucination_trajectory_commitment.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-orange)]()
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
