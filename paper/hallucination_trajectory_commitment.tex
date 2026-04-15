@@ -27,6 +27,12 @@ Istanbul, T\"{u}rkiye
 \begin{document}
 \maketitle
 
+\vspace{-0.5em}
+\begin{center}
+\small Code and data: \url{https://github.com/akarlaraytu/trajectory-commitment}
+\end{center}
+\vspace{0.5em}
+
 \begin{abstract}
 We present causal evidence that hallucination in autoregressive language models constitutes an \emph{early trajectory commitment} phenomenon governed by asymmetric attractor dynamics. Through a same-prompt bifurcation methodology, in which we repeatedly sample from identical inputs to observe spontaneous divergence into factual and hallucinated outputs, we isolate trajectory-level dynamics from prompt-level confounds. On Qwen2.5-1.5B across 61 prompts spanning six hallucination categories, we find that 27 prompts (44.3\%) exhibit genuine bifurcation, with factual and hallucinated trajectories diverging at the first generated token ($\text{KL} = 0$ at step 0, $\text{KL} > 1.0$ at step 1). Activation patching experiments across all 28 layers reveal a pronounced causal asymmetry: injecting a hallucinated activation into a correct trajectory corrupts output in 87.5\% of trials (layer 20), while injecting a correct activation into a hallucinated trajectory recovers only 33.3\% (layer 24), both significantly above the 10.4\% baseline ($p = 0.025$, Fisher's exact) and 12.5\% random-patch control. Window patching further demonstrates that correction requires sustained multi-step intervention, whereas corruption is achievable via single-point perturbation. These findings characterize hallucination as a locally stable attractor basin in the residual stream: entry is probabilistic and rapid, exit demands coordinated intervention across layers and steps.
 \end{abstract}
