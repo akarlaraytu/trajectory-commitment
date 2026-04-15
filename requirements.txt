@@ -1,0 +1,25 @@
+# TLoT — Temporal Logic of Thought
+# Core dependencies for experiments
+
+# ML / Model access
+torch>=2.1.0
+transformer_lens>=2.0.0
+transformers>=4.40.0
+tokenizers>=0.19.0
+
+# Remote model intervention (alternative to local GPU)
+# nnsight>=0.3.0  # uncomment if using nnsight backend
+
+# Numeric / Scientific
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Interpretability tools
+# tuned-lens>=0.2.0  # uncomment for ψ baseline comparison
+# sae-lens>=0.5.0    # uncomment for SAE-based Φ discovery
+
+# Visualization
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0

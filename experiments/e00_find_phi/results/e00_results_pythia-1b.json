@@ -1,0 +1,237 @@
+{
+  "model": "pythia-1b",
+  "backend": "transformerlens",
+  "task": "factual",
+  "categories": [
+    "geography",
+    "science",
+    "history"
+  ],
+  "d_model": 2048,
+  "n_layers": 16,
+  "n_samples_per_category": 200,
+  "verdict": "PHI_EXISTS_BUT_SPECIFIC",
+  "best_layer": 15,
+  "best_stability": 0.9227595329284668,
+  "best_probe_accuracy_mean_diff": 0.5016666666666667,
+  "best_probe_accuracy_lda": 0.9716666666666667,
+  "best_random_accuracy": 0.49899999999999994,
+  "best_signal_mean_diff": 0.0026666666666667616,
+  "best_signal_lda": 0.47266666666666673,
+  "mean_vs_lda_cosine": 0.1535985193455271,
+  "best_separation_gap": 2.0140914916992188,
+  "cross_direction_cosines": {
+    "geography\u2194science": -0.03880729898810387,
+    "geography\u2194history": -0.9496937990188599,
+    "science\u2194history": -0.02112458273768425
+  },
+  "mean_cross_cosine": -0.33654189358154935,
+  "generalization": {
+    "geography\u2192science": 0.5,
+    "geography\u2192history": 0.4625,
+    "science\u2192geography": 0.49,
+    "science\u2192history": 0.4675,
+    "history\u2192geography": 0.4675,
+    "history\u2192science": 0.5
+  },
+  "cross_domain_transfer_citation": 0.51,
+  "token_position": {
+    "max_seq_len": 13,
+    "per_position_gap": [
+      -0.00021667480469034217,
+      -0.0014792060852037991,
+      1.100167918205262,
+      1.2250195646286013,
+      0.8596641302108772,
+      -0.1606041908264153,
+      -1.6031917953491206,
+      -0.1103749015229809,
+      3.15327669871159,
+      5.984967385805571,
+      2.2104543277195514,
+      NaN,
+      NaN
+    ],
+    "final_token_gap": NaN,
+    "mean_gap_all_positions": 1.1506984778811857,
+    "gap_ratio_final_vs_all": NaN
+  },
+  "per_layer": [
+    {
+      "layer": 0,
+      "stability": 0.9343712329864502,
+      "probe_accuracy_mean_diff": 0.495,
+      "probe_accuracy_lda": 0.9466666666666667,
+      "mean_vs_lda_cosine": 0.10018234365588352,
+      "random_accuracy": 0.4966666666666667,
+      "signal": -0.0016666666666667052,
+      "separation_gap": 0.1431427001953125,
+      "random_gap": 0.0033990830183029176
+    },
+    {
+      "layer": 1,
+      "stability": 0.9052922129631042,
+      "probe_accuracy_mean_diff": 0.5016666666666667,
+      "probe_accuracy_lda": 0.9666666666666667,
+      "mean_vs_lda_cosine": 0.22406063626627432,
+      "random_accuracy": 0.5085,
+      "signal": -0.006833333333333247,
+      "separation_gap": 0.196044921875,
+      "random_gap": 0.002633639425039291
+    },
+    {
+      "layer": 2,
+      "stability": 0.9086220264434814,
+      "probe_accuracy_mean_diff": 0.505,
+      "probe_accuracy_lda": 0.97,
+      "mean_vs_lda_cosine": 0.1757540070921782,
+      "random_accuracy": 0.5025,
+      "signal": 0.0025000000000000577,
+      "separation_gap": 0.3131675720214844,
+      "random_gap": 0.008209622278809548
+    },
+    {
+      "layer": 3,
+      "stability": 0.9982276558876038,
+      "probe_accuracy_mean_diff": 0.49666666666666665,
+      "probe_accuracy_lda": 0.885,
+      "mean_vs_lda_cosine": 0.008928197119527694,
+      "random_accuracy": 0.49833333333333335,
+      "signal": -0.0016666666666667052,
+      "separation_gap": 6.6724853515625,
+      "random_gap": 0.1045691967010498
+    },
+    {
+      "layer": 4,
+      "stability": 0.9982457756996155,
+      "probe_accuracy_mean_diff": 0.5016666666666667,
+      "probe_accuracy_lda": 0.8916666666666667,
+      "mean_vs_lda_cosine": 0.00816605490832673,
+      "random_accuracy": 0.501,
+      "signal": 0.0006666666666667043,
+      "separation_gap": 7.7628173828125,
+      "random_gap": 0.11897587776184082
+    },
+    {
+      "layer": 5,
+      "stability": 0.9982777833938599,
+      "probe_accuracy_mean_diff": 0.5016666666666667,
+      "probe_accuracy_lda": 0.9,
+      "mean_vs_lda_cosine": 0.00806832675576976,
+      "random_accuracy": 0.5003333333333334,
+      "signal": 0.0013333333333332975,
+      "separation_gap": 8.5814208984375,
+      "random_gap": 0.12712137699127196
+    },
+    {
+      "layer": 6,
+      "stability": 0.9982296228408813,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9333333333333333,
+      "mean_vs_lda_cosine": 0.00866418468986558,
+      "random_accuracy": 0.5003333333333334,
+      "signal": -0.007000000000000062,
+      "separation_gap": 8.664794921875,
+      "random_gap": 0.1274500846862793
+    },
+    {
+      "layer": 7,
+      "stability": 0.9981807470321655,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9566666666666667,
+      "mean_vs_lda_cosine": 0.008030380765809494,
+      "random_accuracy": 0.5008333333333332,
+      "signal": -0.007499999999999896,
+      "separation_gap": 8.754638671875,
+      "random_gap": 0.13039820194244384
+    },
+    {
+      "layer": 8,
+      "stability": 0.998054027557373,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9583333333333334,
+      "mean_vs_lda_cosine": 0.008229530965921166,
+      "random_accuracy": 0.5008333333333332,
+      "signal": -0.007499999999999896,
+      "separation_gap": 8.8028564453125,
+      "random_gap": 0.12894060611724853
+    },
+    {
+      "layer": 9,
+      "stability": 0.9979743361473083,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9583333333333334,
+      "mean_vs_lda_cosine": 0.010229655833539984,
+      "random_accuracy": 0.5025000000000001,
+      "signal": -0.009166666666666712,
+      "separation_gap": 8.824462890625,
+      "random_gap": 0.13290507793426515
+    },
+    {
+      "layer": 10,
+      "stability": 0.9978999495506287,
+      "probe_accuracy_mean_diff": 0.48833333333333334,
+      "probe_accuracy_lda": 0.955,
+      "mean_vs_lda_cosine": 0.011302842670629996,
+      "random_accuracy": 0.49816666666666654,
+      "signal": -0.009833333333333194,
+      "separation_gap": 8.8602294921875,
+      "random_gap": 0.13292462825775148
+    },
+    {
+      "layer": 11,
+      "stability": 0.9977162480354309,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9583333333333334,
+      "mean_vs_lda_cosine": 0.013741997845470698,
+      "random_accuracy": 0.4993333333333334,
+      "signal": -0.006000000000000061,
+      "separation_gap": 8.8057861328125,
+      "random_gap": 0.12753145694732665
+    },
+    {
+      "layer": 12,
+      "stability": 0.9974420666694641,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9566666666666667,
+      "mean_vs_lda_cosine": 0.014467879263347175,
+      "random_accuracy": 0.49783333333333335,
+      "signal": -0.004500000000000004,
+      "separation_gap": 8.7620849609375,
+      "random_gap": 0.12614717483520507
+    },
+    {
+      "layer": 13,
+      "stability": 0.9969584941864014,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.9633333333333334,
+      "mean_vs_lda_cosine": 0.017566826259943373,
+      "random_accuracy": 0.49883333333333335,
+      "signal": -0.005500000000000005,
+      "separation_gap": 8.2237548828125,
+      "random_gap": 0.11816051006317138
+    },
+    {
+      "layer": 14,
+      "stability": 0.9938207864761353,
+      "probe_accuracy_mean_diff": 0.49333333333333335,
+      "probe_accuracy_lda": 0.96,
+      "mean_vs_lda_cosine": 0.031017115862188763,
+      "random_accuracy": 0.4998333333333334,
+      "signal": -0.006500000000000061,
+      "separation_gap": 6.5535888671875,
+      "random_gap": 0.09186196327209473
+    },
+    {
+      "layer": 15,
+      "stability": 0.9227595329284668,
+      "probe_accuracy_mean_diff": 0.5016666666666667,
+      "probe_accuracy_lda": 0.9716666666666667,
+      "mean_vs_lda_cosine": 0.1535985193455271,
+      "random_accuracy": 0.49899999999999994,
+      "signal": 0.0026666666666667616,
+      "separation_gap": 2.0140914916992188,
+      "random_gap": 0.0233738511800766
+    }
+  ]
+}

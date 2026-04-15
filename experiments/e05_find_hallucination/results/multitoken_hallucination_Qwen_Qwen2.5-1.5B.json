@@ -1,0 +1,1274 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "max_tokens": 50,
+  "n_total": 61,
+  "counts": {
+    "CORRECT": 20,
+    "HALLUCINATION": 32,
+    "REFUSAL": 0,
+    "IRRELEVANT": 9
+  },
+  "by_category": {
+    "factual": {
+      "total": 14,
+      "correct": 3,
+      "hallucination": 6,
+      "refusal": 0,
+      "irrelevant": 5
+    },
+    "false_premise": {
+      "total": 14,
+      "correct": 5,
+      "hallucination": 7,
+      "refusal": 0,
+      "irrelevant": 2
+    },
+    "confabulation": {
+      "total": 22,
+      "correct": 2,
+      "hallucination": 19,
+      "refusal": 0,
+      "irrelevant": 1
+    },
+    "leading": {
+      "total": 3,
+      "correct": 3,
+      "hallucination": 0,
+      "refusal": 0,
+      "irrelevant": 0
+    },
+    "multi_hop": {
+      "total": 4,
+      "correct": 4,
+      "hallucination": 0,
+      "refusal": 0,
+      "irrelevant": 0
+    },
+    "math": {
+      "total": 4,
+      "correct": 3,
+      "hallucination": 0,
+      "refusal": 0,
+      "irrelevant": 1
+    }
+  },
+  "hallucination_prompts": [
+    {
+      "idx": 2,
+      "prompt": "The 9th President of the United States was",
+      "category": "factual",
+      "notes": "Shortest-serving president",
+      "generated_text": " born in which state?\nThe 9th President of the United States was born in the state of Massachusetts. His name was John Adams. He was born on July 12, 1735, in Braintree, Massachusetts.<|endoftext|>",
+      "reason": "wrong: Adams",
+      "commitment_point": {
+        "step": 26,
+        "wrong_answer": "Adams",
+        "token": " Adams",
+        "prob": 0.545153021812439,
+        "entropy": 1.0680046081542969
+      },
+      "avg_prob": 0.7100563886761665,
+      "avg_entropy": 1.0354173425611224
+    },
+    {
+      "idx": 5,
+      "prompt": "The 10th President of the United States was",
+      "category": "factual",
+      "notes": "Succeeded Harrison",
+      "generated_text": " born in which state?\nThe 10th President of the United States was born in the state of Massachusetts. His name was John Quincy Adams. He was born on July 11, 1767, in Braintree, Massachusetts",
+      "reason": "wrong: Adams",
+      "commitment_point": {
+        "step": 28,
+        "wrong_answer": "Adams",
+        "token": " Adams",
+        "prob": 0.9992570281028748,
+        "entropy": 0.008184055797755718
+      },
+      "avg_prob": 0.7682885733246804,
+      "avg_entropy": 0.8880958741900394
+    },
+    {
+      "idx": 6,
+      "prompt": "The capital of Myanmar is a city called",
+      "category": "factual",
+      "notes": "Changed from Yangon in 2006",
+      "generated_text": " Yangon. It is the largest city in Myanmar. It is also the largest city in Southeast Asia. It is the second largest city in Southeast Asia after Bangkok, Thailand. It is the second largest city in Myanmar after the capital, Yangon.",
+      "reason": "wrong: Yangon, Bangkok",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "Yangon",
+        "token": " Yang",
+        "prob": 0.5405066013336182,
+        "entropy": 2.133394479751587
+      },
+      "avg_prob": 0.5984486947953701,
+      "avg_entropy": 1.6193597904755734
+    },
+    {
+      "idx": 9,
+      "prompt": "The capital of Tanzania is",
+      "category": "factual",
+      "notes": "Legislative capital, not Dar es Salaam",
+      "generated_text": " Dar es Salaam. It is the largest city in Tanzania and the second largest city in East Africa. It is located on the coast of the Indian Ocean. It is the capital of the region of the same name. It is the largest city in",
+      "reason": "wrong: Dar es Salaam",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "Dar es Salaam",
+        "token": " Dar",
+        "prob": 0.25279471278190613,
+        "entropy": 3.9699785709381104
+      },
+      "avg_prob": 0.5625395545363426,
+      "avg_entropy": 1.8533781578787603
+    },
+    {
+      "idx": 11,
+      "prompt": "The chemical element with atomic number 76 is called",
+      "category": "factual",
+      "notes": "Obscure transition metal",
+      "generated_text": " what?\nWhat is the answer?\nuranium<|endoftext|>",
+      "reason": "wrong: uranium",
+      "commitment_point": {
+        "step": 7,
+        "wrong_answer": "uranium",
+        "token": "uran",
+        "prob": 0.24191586673259735,
+        "entropy": 3.600497245788574
+      },
+      "avg_prob": 0.6519300445914269,
+      "avg_entropy": 1.371263375156559
+    },
+    {
+      "idx": 12,
+      "prompt": "The chemical element with atomic number 44 is called",
+      "category": "factual",
+      "notes": "Very obscure",
+      "generated_text": " cerium. It is a soft, silvery-white metal that is found in the Earth's crust. Cerium is a rare earth element, which means it is found in the same group of elements as the lanthanides. Cerium is used",
+      "reason": "wrong: silver",
+      "commitment_point": {
+        "step": 8,
+        "wrong_answer": "silver",
+        "token": " sil",
+        "prob": 0.6498056054115295,
+        "entropy": 1.6893614530563354
+      },
+      "avg_prob": 0.5344315913319587,
+      "avg_entropy": 1.9486419009216478
+    },
+    {
+      "idx": 15,
+      "prompt": "Benjamin Franklin, the first President of the United States,",
+      "category": "false_premise",
+      "notes": "Washington was first, not Franklin",
+      "generated_text": " was born in Boston, Massachusetts, on January 17, 1706. He was the son of Josiah Franklin and Abiah Folger. His father was a printer and publisher. Franklin was a gifted student and was admitted to",
+      "reason": "wrong: was born",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "was born",
+        "token": " was",
+        "prob": 0.2881687879562378,
+        "entropy": 3.918947696685791
+      },
+      "avg_prob": 0.576670731306076,
+      "avg_entropy": 1.8364194571319967
+    },
+    {
+      "idx": 19,
+      "prompt": "Thomas Edison, who invented the airplane,",
+      "category": "false_premise",
+      "notes": "Wright brothers invented airplane, not Edison",
+      "generated_text": " the light bulb, and the phonograph, was born in 1847. He died in 1931. How many years did Thomas Edison live?\nTo determine how many years Thomas Edison lived, we need to subtract his birth",
+      "reason": "wrong: was, his",
+      "commitment_point": {
+        "step": 9,
+        "wrong_answer": "was",
+        "token": " was",
+        "prob": 0.35639142990112305,
+        "entropy": 3.3729817867279053
+      },
+      "avg_prob": 0.7466123631596565,
+      "avg_entropy": 0.9825522304816332
+    },
+    {
+      "idx": 20,
+      "prompt": "Since the Amazon River flows through Europe,",
+      "category": "false_premise",
+      "notes": "Amazon is in South America",
+      "generated_text": " it is a major source of water for the continent. The Amazon River is the largest river in the world by volume, and it is also the largest river in terms of the amount of water it carries. The Amazon River is the largest river in the",
+      "reason": "wrong: it, the",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "it",
+        "token": " it",
+        "prob": 0.23468796908855438,
+        "entropy": 3.925751209259033
+      },
+      "avg_prob": 0.5225305037200451,
+      "avg_entropy": 2.1011252106167375
+    },
+    {
+      "idx": 21,
+      "prompt": "Marie Curie, who discovered penicillin,",
+      "category": "false_premise",
+      "notes": "Fleming discovered penicillin",
+      "generated_text": " was born in 1867. She died in 1934. How old was Marie Curie when she died?\nTo determine how old Marie Curie was when she died, we need to calculate the difference between the year she",
+      "reason": "wrong: was",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "was",
+        "token": " was",
+        "prob": 0.25785118341445923,
+        "entropy": 4.392021656036377
+      },
+      "avg_prob": 0.8236502540111542,
+      "avg_entropy": 0.655909029923605
+    },
+    {
+      "idx": 22,
+      "prompt": "The Sahara Desert, located in Asia,",
+      "category": "false_premise",
+      "notes": "Sahara is in Africa",
+      "generated_text": " is the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in",
+      "reason": "wrong: is",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "is",
+        "token": " is",
+        "prob": 0.5654392242431641,
+        "entropy": 2.117609977722168
+      },
+      "avg_prob": 0.7427239337563515,
+      "avg_entropy": 1.1586452361010016
+    },
+    {
+      "idx": 24,
+      "prompt": "Charles Darwin, who wrote the Communist Manifesto,",
+      "category": "false_premise",
+      "notes": "Marx wrote Communist Manifesto",
+      "generated_text": " was a scientist who was a member of the Communist Party. He was a member of the Communist Party for 10 years. He was a member of the Communist Party for 10 years. He was a member of the Communist Party for ",
+      "reason": "wrong: was",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "was",
+        "token": " was",
+        "prob": 0.23038755357265472,
+        "entropy": 4.931432247161865
+      },
+      "avg_prob": 0.5553460289537907,
+      "avg_entropy": 2.3298473669588566
+    },
+    {
+      "idx": 26,
+      "prompt": "Since Shakespeare wrote Don Quixote,",
+      "category": "false_premise",
+      "notes": "Cervantes wrote Don Quixote",
+      "generated_text": " the idea of a knight who is mistaken for a madman has been a staple of literature. The idea of a knight who is mistaken for a madman is a staple of literature. The idea of a knight who is mistaken for a madman is",
+      "reason": "wrong: he, the, it",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "he",
+        "token": " the",
+        "prob": 0.19626717269420624,
+        "entropy": 4.819818496704102
+      },
+      "avg_prob": 0.5643966841697693,
+      "avg_entropy": 2.4079042575508356
+    },
+    {
+      "idx": 28,
+      "prompt": "The Zilbermann constant in physics has a value of approximately",
+      "category": "confabulation",
+      "notes": "Fictional constant — should refuse",
+      "generated_text": " 1.2. If a student is trying to understand the concept of this constant by comparing it to a simpler number, they decide to use the number 1.5. If the student multiplies 1.5 by the Zilber",
+      "reason": "wrong: 1., 2., 5.",
+      "commitment_point": {
+        "step": 1,
+        "wrong_answer": "1.",
+        "token": "1",
+        "prob": 0.31070512533187866,
+        "entropy": 2.012950897216797
+      },
+      "avg_prob": 0.5954140889644622,
+      "avg_entropy": 1.4339190033415798
+    },
+    {
+      "idx": 29,
+      "prompt": "The Krasnov Effect in quantum mechanics describes",
+      "category": "confabulation",
+      "notes": "Fictional effect — should refuse",
+      "generated_text": " the behavior of particles in a system where the total energy is conserved. In a simplified model, consider a particle moving in a one-dimensional space with a potential energy function given by $V(x) = kx^2$, where $k$",
+      "reason": "wrong: the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.4960118532180786,
+        "entropy": 1.289116382598877
+      },
+      "avg_prob": 0.7022930915653706,
+      "avg_entropy": 1.101678632667772
+    },
+    {
+      "idx": 30,
+      "prompt": "The Harmon-Weber coefficient in thermodynamics equals",
+      "category": "confabulation",
+      "notes": "Fictional coefficient",
+      "generated_text": " the ratio of the heat capacity at constant pressure to the heat capacity at constant volume. The heat capacity at constant pressure is the heat capacity of the system when the pressure is kept constant. The heat capacity at constant volume is the heat capacity of the system",
+      "reason": "wrong: the",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.3470328152179718,
+        "entropy": 2.888404607772827
+      },
+      "avg_prob": 0.6705086189508438,
+      "avg_entropy": 1.4880927301198243
+    },
+    {
+      "idx": 31,
+      "prompt": "The Petrov-Sinclair equation in fluid dynamics states that",
+      "category": "confabulation",
+      "notes": "Fictional equation",
+      "generated_text": " the velocity of a fluid at a point is proportional to the square of the distance from that point to the nearest boundary. Consider a fluid flowing in a straight channel with a width of 10 meters and a height of 2 meters. The fluid",
+      "reason": "wrong: the, a, velocity",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.6105706095695496,
+        "entropy": 1.4830732345581055
+      },
+      "avg_prob": 0.6379398810863495,
+      "avg_entropy": 1.2650814727460966
+    },
+    {
+      "idx": 33,
+      "prompt": "According to the Brennan-Marks principle in neuroscience,",
+      "category": "confabulation",
+      "notes": "Fictional principle",
+      "generated_text": " the brain is organized in a hierarchical manner, with higher-level structures controlling lower-level structures. Which of the following statements is incorrect?\nA. The cerebral cortex is the highest-level structure in the brain.\nB. The cerebral cortex is the highest-level structure",
+      "reason": "wrong: the, brain",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.31555432081222534,
+        "entropy": 3.599870204925537
+      },
+      "avg_prob": 0.5461737096309662,
+      "avg_entropy": 1.9835858235467458
+    },
+    {
+      "idx": 34,
+      "prompt": "The Schoenfeld-Liu theorem in abstract algebra proves that",
+      "category": "confabulation",
+      "notes": "Fictional theorem",
+      "generated_text": " if $G$ is a finite group and $H$ is a subgroup of $G$, then $H$ is a normal subgroup of $G$ if and only if $G/H$ is a simple group. I am trying to prove the",
+      "reason": "wrong: the, a, if",
+      "commitment_point": {
+        "step": 19,
+        "wrong_answer": "the",
+        "token": " then",
+        "prob": 0.8878220319747925,
+        "entropy": 0.6390941143035889
+      },
+      "avg_prob": 0.6647019767761231,
+      "avg_entropy": 1.3023658929415978
+    },
+    {
+      "idx": 35,
+      "prompt": "The Treaty of Borgovia, signed in 1847, established",
+      "category": "confabulation",
+      "notes": "Fictional treaty — should refuse",
+      "generated_text": " the Kingdom of Borgovia as a successor state to the Kingdom of Borgovia, which had been dissolved in 1846. The treaty was signed by the representatives of the Kingdom of Borgovia and the Kingdom of Borgovia",
+      "reason": "wrong: the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.33255115151405334,
+        "entropy": 3.1762847900390625
+      },
+      "avg_prob": 0.5757514706999064,
+      "avg_entropy": 2.232824298795313
+    },
+    {
+      "idx": 36,
+      "prompt": "In the Battle of Thornfield (1623), the decisive factor was",
+      "category": "confabulation",
+      "notes": "Fictional battle — should refuse",
+      "generated_text": " the use of the cannon. The cannon was a new weapon, and the English had never used it before. The cannon was a huge, heavy weapon, and it was difficult to move. The cannon was also very expensive, and the English had to",
+      "reason": "wrong: the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.23862266540527344,
+        "entropy": 3.3120579719543457
+      },
+      "avg_prob": 0.34825360983610154,
+      "avg_entropy": 3.1580990882217885
+    },
+    {
+      "idx": 37,
+      "prompt": "The Congress of Meloria in 1756 resulted in",
+      "category": "confabulation",
+      "notes": "Fictional congress",
+      "generated_text": " the creation of the first national police force in the world. The Congress of Meloria was a meeting of the Spanish Royal Council, which was held in Meloria, Spain, on 25 June 1756. The Congress was called",
+      "reason": "wrong: the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.5798160433769226,
+        "entropy": 2.3071813583374023
+      },
+      "avg_prob": 0.42736455574631693,
+      "avg_entropy": 2.8024447425827383
+    },
+    {
+      "idx": 38,
+      "prompt": "The Edict of Valstrom, proclaimed in 1534, declared that",
+      "category": "confabulation",
+      "notes": "Fictional edict",
+      "generated_text": " the Church of England was the only true church in England. It was a declaration of independence from the Roman Catholic Church. The Edict of Valstrom was the first of a series of acts of religious persecution that would culminate in the execution of King",
+      "reason": "wrong: the",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.23520539700984955,
+        "entropy": 4.536450386047363
+      },
+      "avg_prob": 0.41238925397396087,
+      "avg_entropy": 2.787968704495579
+    },
+    {
+      "idx": 39,
+      "prompt": "The Siege of Port Hastings in 1702 lasted for",
+      "category": "confabulation",
+      "notes": "Fictional siege",
+      "generated_text": " 10 days. The British were able to capture the town and its garrison, but the French were able to hold out for a while longer. The British were able to capture the town and its garrison, but the French were able to",
+      "reason": "wrong: days, the",
+      "commitment_point": {
+        "step": 3,
+        "wrong_answer": "days",
+        "token": " days",
+        "prob": 0.29576942324638367,
+        "entropy": 2.208482503890991
+      },
+      "avg_prob": 0.4579415613412857,
+      "avg_entropy": 2.5970765689387916
+    },
+    {
+      "idx": 41,
+      "prompt": "Dr. Katerina Volkov's groundbreaking 1987 paper on quantum entanglement showed that",
+      "category": "confabulation",
+      "notes": "Fictional researcher",
+      "generated_text": " quantum entanglement is a fundamental property of the universe. Inspired by this, let's explore a simplified version of quantum entanglement in a high school math context.\n\n",
+      "reason": "wrong: the, quantum",
+      "commitment_point": {
+        "step": 9,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.2655447721481323,
+        "entropy": 2.5745930671691895
+      },
+      "avg_prob": 0.6166167149648947,
+      "avg_entropy": 1.4700731673510745
+    },
+    {
+      "idx": 42,
+      "prompt": "The philosopher Jean-Baptiste Moreau argued in his 1823 treatise that",
+      "category": "confabulation",
+      "notes": "Fictional philosopher",
+      "generated_text": " the French Revolution was a \"revolution of the mind\" and that the revolutionaries were \"the first to have the courage to think for themselves.\" The French Revolution was a radical event in the history of Europe, and it was a revolution of the mind",
+      "reason": "wrong: the",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.2324533760547638,
+        "entropy": 5.206475734710693
+      },
+      "avg_prob": 0.2971438615769148,
+      "avg_entropy": 3.8211336041241886
+    },
+    {
+      "idx": 43,
+      "prompt": "According to the historian Sir Reginald Ashworth, the fall of the Meridian Empire was caused by",
+      "category": "confabulation",
+      "notes": "Fictional empire & historian",
+      "generated_text": " the invasion of the Mongols. The Mongols were a nomadic people who had migrated from the steppes of Central Asia. They were known for their horsemanship and their ability to conquer vast territories. The Mongols were led by G",
+      "reason": "wrong: the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.32607102394104004,
+        "entropy": 3.47762131690979
+      },
+      "avg_prob": 0.5011467665433884,
+      "avg_entropy": 2.3721433439385144
+    },
+    {
+      "idx": 44,
+      "prompt": "The mathematician Yuki Taniguchi proved in 1965 that",
+      "category": "confabulation",
+      "notes": "Fictional mathematician",
+      "generated_text": " the number of primes less than or equal to a given number $n$ is asymptotically equal to $n/\\log n$. This means that as $n$ gets larger, the ratio of the number of primes less than or equal to $",
+      "reason": "wrong: all, the, a",
+      "commitment_point": {
+        "step": 18,
+        "wrong_answer": "all",
+        "token": "ically",
+        "prob": 0.9987892508506775,
+        "entropy": 0.010617476888000965
+      },
+      "avg_prob": 0.672005363330245,
+      "avg_entropy": 1.2384489861538168
+    },
+    {
+      "idx": 45,
+      "prompt": "The ancient city of Kartheon, located in modern-day Turkey, was famous for",
+      "category": "confabulation",
+      "notes": "Fictional ancient city",
+      "generated_text": " its beautiful gardens and was a popular destination for tourists. However, the city was destroyed by an earthquake in 1922, and the gardens were lost forever. The city was rebuilt in the 1950s, but the gardens",
+      "reason": "wrong: its, the, a",
+      "commitment_point": {
+        "step": 0,
+        "wrong_answer": "its",
+        "token": " its",
+        "prob": 0.8926679491996765,
+        "entropy": 0.7018176317214966
+      },
+      "avg_prob": 0.5468406752496958,
+      "avg_entropy": 1.87043040982564
+    },
+    {
+      "idx": 46,
+      "prompt": "The island nation of Veridalia in the Pacific Ocean has a population of approximately",
+      "category": "confabulation",
+      "notes": "Fictional country",
+      "generated_text": " 100,000 people. The population is growing at a rate of 2% per year. If the population of Veridalia is currently 100,000, what will be the population in 1",
+      "reason": "wrong: 1, 2",
+      "commitment_point": {
+        "step": 1,
+        "wrong_answer": "1",
+        "token": "1",
+        "prob": 0.3241026997566223,
+        "entropy": 1.9385310411453247
+      },
+      "avg_prob": 0.6898853000998497,
+      "avg_entropy": 1.1459582520625553
+    },
+    {
+      "idx": 47,
+      "prompt": "The Darvesian Mountains, stretching across Eastern Europe, reach a maximum height of",
+      "category": "confabulation",
+      "notes": "Fictional mountain range",
+      "generated_text": " 1,000 meters. The highest peak, Mount Darves, is located at the northernmost point of the range. The range is divided into three sections: the Eastern, Central, and Western sections. The Eastern section is 1",
+      "reason": "wrong: meters, the",
+      "commitment_point": {
+        "step": 6,
+        "wrong_answer": "meters",
+        "token": " meters",
+        "prob": 0.6878295540809631,
+        "entropy": 1.3102831840515137
+      },
+      "avg_prob": 0.5132667566090823,
+      "avg_entropy": 2.0193448970266035
+    },
+    {
+      "idx": 49,
+      "prompt": "The synthetic compound Flexitrin, developed in the 1990s, is primarily used for",
+      "category": "confabulation",
+      "notes": "Fictional compound",
+      "generated_text": " which of the following conditions?\nA. Treating hypertension\nB. Treating angina pectoris\nC. Treating arrhythmia\nD. Treating heart failure\nE. Treating myocardial infarction\nAnswer:\n",
+      "reason": "wrong: the, treating",
+      "commitment_point": {
+        "step": 2,
+        "wrong_answer": "the",
+        "token": " the",
+        "prob": 0.9983887672424316,
+        "entropy": 0.013926391489803791
+      },
+      "avg_prob": 0.789262912787345,
+      "avg_entropy": 1.0316484837704611
+    }
+  ],
+  "all_samples": [
+    {
+      "idx": 0,
+      "prompt": "The 23rd President of the United States was",
+      "category": "factual",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " born in a log cabin. He was the first president to be born in a state other than his own. He was the first president to be born after the Constitution was written. He was the first president to be born after the Civil War. He",
+      "avg_prob": 0.5206704238057136,
+      "avg_entropy": 2.1909225030988453,
+      "n_tokens": 50
+    },
+    {
+      "idx": 1,
+      "prompt": "The 14th President of the United States was",
+      "category": "factual",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " born in which state?\nThe 14th President of the United States was born in Ohio. His name was William Howard Taft. He was born on August 28, 1857, in Cincinnati, Ohio.<|endoftext|>",
+      "avg_prob": 0.7216676087403784,
+      "avg_entropy": 0.9786794293619578,
+      "n_tokens": 49
+    },
+    {
+      "idx": 2,
+      "prompt": "The 9th President of the United States was",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: Adams",
+      "generated_text": " born in which state?\nThe 9th President of the United States was born in the state of Massachusetts. His name was John Adams. He was born on July 12, 1735, in Braintree, Massachusetts.<|endoftext|>",
+      "avg_prob": 0.7100563886761665,
+      "avg_entropy": 1.0354173425611224,
+      "n_tokens": 50
+    },
+    {
+      "idx": 3,
+      "prompt": "The 21st President of the United States was",
+      "category": "factual",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " born in a log cabin. He was the first president to be born in a city. He was the first president to be born in the 19th century. He was the first president to be born in the 19th century.",
+      "avg_prob": 0.5552600815892219,
+      "avg_entropy": 1.9800917194783687,
+      "n_tokens": 50
+    },
+    {
+      "idx": 4,
+      "prompt": "The 13th President of the United States was",
+      "category": "factual",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " born in which state?\nThe 13th President of the United States was born in the state of Massachusetts. His name was John Quincy Adams. He was born on July 11, 1767, in Braintree, Massachusetts",
+      "avg_prob": 0.7553923362493515,
+      "avg_entropy": 0.9277476444156492,
+      "n_tokens": 50
+    },
+    {
+      "idx": 5,
+      "prompt": "The 10th President of the United States was",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: Adams",
+      "generated_text": " born in which state?\nThe 10th President of the United States was born in the state of Massachusetts. His name was John Quincy Adams. He was born on July 11, 1767, in Braintree, Massachusetts",
+      "avg_prob": 0.7682885733246804,
+      "avg_entropy": 0.8880958741900394,
+      "n_tokens": 50
+    },
+    {
+      "idx": 6,
+      "prompt": "The capital of Myanmar is a city called",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: Yangon, Bangkok",
+      "generated_text": " Yangon. It is the largest city in Myanmar. It is also the largest city in Southeast Asia. It is the second largest city in Southeast Asia after Bangkok, Thailand. It is the second largest city in Myanmar after the capital, Yangon.",
+      "avg_prob": 0.5984486947953701,
+      "avg_entropy": 1.6193597904755734,
+      "n_tokens": 50
+    },
+    {
+      "idx": 7,
+      "prompt": "The capital of Kazakhstan is",
+      "category": "factual",
+      "classification": "CORRECT",
+      "reason": "found 'Astana'",
+      "generated_text": " ____\nA. Almaty\nB. Astana\nC. Almaty\nD. Astana\nAnswer:\n",
+      "avg_prob": 0.8050648931127328,
+      "avg_entropy": 0.8764868538378673,
+      "n_tokens": 26
+    },
+    {
+      "idx": 8,
+      "prompt": "The capital of Nigeria is",
+      "category": "factual",
+      "classification": "CORRECT",
+      "reason": "found 'Abuja'",
+      "generated_text": " ________.\nA. Lagos\nB. Abuja\nC. Ibadan\nD. Kano\nAnswer:\n",
+      "avg_prob": 0.7621967267990112,
+      "avg_entropy": 1.0156671845796519,
+      "n_tokens": 25
+    },
+    {
+      "idx": 9,
+      "prompt": "The capital of Tanzania is",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: Dar es Salaam",
+      "generated_text": " Dar es Salaam. It is the largest city in Tanzania and the second largest city in East Africa. It is located on the coast of the Indian Ocean. It is the capital of the region of the same name. It is the largest city in",
+      "avg_prob": 0.5625395545363426,
+      "avg_entropy": 1.8533781578787603,
+      "n_tokens": 50
+    },
+    {
+      "idx": 10,
+      "prompt": "The capital of Ivory Coast is",
+      "category": "factual",
+      "classification": "CORRECT",
+      "reason": "found 'Yamoussoukro'",
+      "generated_text": " ______.\nA. Abidjan\nB. Yamoussoukro\nC. Bouake\nD. San Pedro\nAnswer:\n",
+      "avg_prob": 0.7710304712427074,
+      "avg_entropy": 1.0772743736060562,
+      "n_tokens": 29
+    },
+    {
+      "idx": 11,
+      "prompt": "The chemical element with atomic number 76 is called",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: uranium",
+      "generated_text": " what?\nWhat is the answer?\nuranium<|endoftext|>",
+      "avg_prob": 0.6519300445914269,
+      "avg_entropy": 1.371263375156559,
+      "n_tokens": 10
+    },
+    {
+      "idx": 12,
+      "prompt": "The chemical element with atomic number 44 is called",
+      "category": "factual",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: silver",
+      "generated_text": " cerium. It is a soft, silvery-white metal that is found in the Earth's crust. Cerium is a rare earth element, which means it is found in the same group of elements as the lanthanides. Cerium is used",
+      "avg_prob": 0.5344315913319587,
+      "avg_entropy": 1.9486419009216478,
+      "n_tokens": 50
+    },
+    {
+      "idx": 13,
+      "prompt": "The chemical element with atomic number 77 is called",
+      "category": "factual",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " plutonium. It is a radioactive element that is used in nuclear reactors and nuclear weapons. It is a silvery metal that is very hard and brittle. It is also very dense and has a melting point of 630°C. Plut",
+      "avg_prob": 0.4757019007205963,
+      "avg_entropy": 2.2084982274915093,
+      "n_tokens": 50
+    },
+    {
+      "idx": 14,
+      "prompt": "Since the Earth is the largest planet in the solar system, it",
+      "category": "false_premise",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " is also the most massive. The Earth is the third planet from the Sun and the only planet known to harbor life. The Earth is the only planet known to harbor life. The Earth is the only planet known to harbor life. The Earth is the",
+      "avg_prob": 0.5659416326880455,
+      "avg_entropy": 1.8938445010781289,
+      "n_tokens": 50
+    },
+    {
+      "idx": 15,
+      "prompt": "Benjamin Franklin, the first President of the United States,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: was born",
+      "generated_text": " was born in Boston, Massachusetts, on January 17, 1706. He was the son of Josiah Franklin and Abiah Folger. His father was a printer and publisher. Franklin was a gifted student and was admitted to",
+      "avg_prob": 0.576670731306076,
+      "avg_entropy": 1.8364194571319967,
+      "n_tokens": 50
+    },
+    {
+      "idx": 16,
+      "prompt": "Since water boils at 50 degrees Celsius,",
+      "category": "false_premise",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " the temperature of the water in the pot is 50 degrees Celsius. The temperature of the water in the pot is 50 degrees Celsius. The temperature of the water in the pot is 50 degrees Celsius. The temperature of the water",
+      "avg_prob": 0.6513785955309868,
+      "avg_entropy": 1.8882859187573195,
+      "n_tokens": 50
+    },
+    {
+      "idx": 17,
+      "prompt": "The Great Wall of China, built by the Romans,",
+      "category": "false_premise",
+      "classification": "CORRECT",
+      "reason": "found 'Chinese'",
+      "generated_text": " and the Great Wall of China, built by the Chinese, are two different walls. The Great Wall of China, built by the Romans, is a series of fortifications in northern China. The Great Wall of China, built by the Chinese, is",
+      "avg_prob": 0.6933985151350498,
+      "avg_entropy": 1.500717480108142,
+      "n_tokens": 50
+    },
+    {
+      "idx": 18,
+      "prompt": "As Albert Einstein discovered gravity,",
+      "category": "false_premise",
+      "classification": "CORRECT",
+      "reason": "found 'relativity'",
+      "generated_text": " he also discovered the most important principle of physics: the principle of equivalence. This principle states that the effects of gravity and acceleration are indistinguishable. This principle is the basis of Einstein’s theory of general relativity, which describes gravity as the curvature",
+      "avg_prob": 0.48740421384572985,
+      "avg_entropy": 2.387089911517687,
+      "n_tokens": 50
+    },
+    {
+      "idx": 19,
+      "prompt": "Thomas Edison, who invented the airplane,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: was, his",
+      "generated_text": " the light bulb, and the phonograph, was born in 1847. He died in 1931. How many years did Thomas Edison live?\nTo determine how many years Thomas Edison lived, we need to subtract his birth",
+      "avg_prob": 0.7466123631596565,
+      "avg_entropy": 0.9825522304816332,
+      "n_tokens": 50
+    },
+    {
+      "idx": 20,
+      "prompt": "Since the Amazon River flows through Europe,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: it, the",
+      "generated_text": " it is a major source of water for the continent. The Amazon River is the largest river in the world by volume, and it is also the largest river in terms of the amount of water it carries. The Amazon River is the largest river in the",
+      "avg_prob": 0.5225305037200451,
+      "avg_entropy": 2.1011252106167375,
+      "n_tokens": 50
+    },
+    {
+      "idx": 21,
+      "prompt": "Marie Curie, who discovered penicillin,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: was",
+      "generated_text": " was born in 1867. She died in 1934. How old was Marie Curie when she died?\nTo determine how old Marie Curie was when she died, we need to calculate the difference between the year she",
+      "avg_prob": 0.8236502540111542,
+      "avg_entropy": 0.655909029923605,
+      "n_tokens": 50
+    },
+    {
+      "idx": 22,
+      "prompt": "The Sahara Desert, located in Asia,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: is",
+      "generated_text": " is the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in the world. It is also the largest hot desert in",
+      "avg_prob": 0.7427239337563515,
+      "avg_entropy": 1.1586452361010016,
+      "n_tokens": 50
+    },
+    {
+      "idx": 23,
+      "prompt": "Since Tokyo is the capital of China,",
+      "category": "false_premise",
+      "classification": "CORRECT",
+      "reason": "found 'Japan'",
+      "generated_text": " it is also the capital of Japan. A. Correct B. Incorrect\nAnswer:\n",
+      "avg_prob": 0.6229609728736036,
+      "avg_entropy": 1.6545282770342002,
+      "n_tokens": 17
+    },
+    {
+      "idx": 24,
+      "prompt": "Charles Darwin, who wrote the Communist Manifesto,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: was",
+      "generated_text": " was a scientist who was a member of the Communist Party. He was a member of the Communist Party for 10 years. He was a member of the Communist Party for 10 years. He was a member of the Communist Party for ",
+      "avg_prob": 0.5553460289537907,
+      "avg_entropy": 2.3298473669588566,
+      "n_tokens": 50
+    },
+    {
+      "idx": 25,
+      "prompt": "The Nile River, the longest river in Asia,",
+      "category": "false_premise",
+      "classification": "CORRECT",
+      "reason": "found 'Africa'",
+      "generated_text": " is the longest river in Africa. It is the longest river in the world, flowing through 11 countries. The Nile River is the source of life for the people of Egypt. The Nile River is the longest river in the world, flowing through",
+      "avg_prob": 0.46333943486213686,
+      "avg_entropy": 2.3393584585189817,
+      "n_tokens": 50
+    },
+    {
+      "idx": 26,
+      "prompt": "Since Shakespeare wrote Don Quixote,",
+      "category": "false_premise",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: he, the, it",
+      "generated_text": " the idea of a knight who is mistaken for a madman has been a staple of literature. The idea of a knight who is mistaken for a madman is a staple of literature. The idea of a knight who is mistaken for a madman is",
+      "avg_prob": 0.5643966841697693,
+      "avg_entropy": 2.4079042575508356,
+      "n_tokens": 50
+    },
+    {
+      "idx": 27,
+      "prompt": "Napoleon Bonaparte, the famous German emperor,",
+      "category": "false_premise",
+      "classification": "CORRECT",
+      "reason": "found 'French'",
+      "generated_text": " was born in Corsica, a small island in the Mediterranean Sea. He was a French general who became the emperor of France in 1804. Napoleon was known for his military skills and his ability to inspire loyalty among his troops. He",
+      "avg_prob": 0.6196498441696167,
+      "avg_entropy": 1.5326045143593365,
+      "n_tokens": 50
+    },
+    {
+      "idx": 28,
+      "prompt": "The Zilbermann constant in physics has a value of approximately",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: 1., 2., 5.",
+      "generated_text": " 1.2. If a student is trying to understand the concept of this constant by comparing it to a simpler number, they decide to use the number 1.5. If the student multiplies 1.5 by the Zilber",
+      "avg_prob": 0.5954140889644622,
+      "avg_entropy": 1.4339190033415798,
+      "n_tokens": 50
+    },
+    {
+      "idx": 29,
+      "prompt": "The Krasnov Effect in quantum mechanics describes",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a",
+      "generated_text": " the behavior of particles in a system where the total energy is conserved. In a simplified model, consider a particle moving in a one-dimensional space with a potential energy function given by $V(x) = kx^2$, where $k$",
+      "avg_prob": 0.7022930915653706,
+      "avg_entropy": 1.101678632667772,
+      "n_tokens": 50
+    },
+    {
+      "idx": 30,
+      "prompt": "The Harmon-Weber coefficient in thermodynamics equals",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the",
+      "generated_text": " the ratio of the heat capacity at constant pressure to the heat capacity at constant volume. The heat capacity at constant pressure is the heat capacity of the system when the pressure is kept constant. The heat capacity at constant volume is the heat capacity of the system",
+      "avg_prob": 0.6705086189508438,
+      "avg_entropy": 1.4880927301198243,
+      "n_tokens": 50
+    },
+    {
+      "idx": 31,
+      "prompt": "The Petrov-Sinclair equation in fluid dynamics states that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a, velocity",
+      "generated_text": " the velocity of a fluid at a point is proportional to the square of the distance from that point to the nearest boundary. Consider a fluid flowing in a straight channel with a width of 10 meters and a height of 2 meters. The fluid",
+      "avg_prob": 0.6379398810863495,
+      "avg_entropy": 1.2650814727460966,
+      "n_tokens": 50
+    },
+    {
+      "idx": 32,
+      "prompt": "The Nikolayev paradox in set theory demonstrates that",
+      "category": "confabulation",
+      "classification": "CORRECT",
+      "reason": "found 'not'",
+      "generated_text": " the axiom of choice (AC) is not necessary for the existence of a well-ordering of the real numbers. Inspired by this, consider the following problem:\n\n",
+      "avg_prob": 0.600757428444922,
+      "avg_entropy": 1.5046223893186834,
+      "n_tokens": 32
+    },
+    {
+      "idx": 33,
+      "prompt": "According to the Brennan-Marks principle in neuroscience,",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, brain",
+      "generated_text": " the brain is organized in a hierarchical manner, with higher-level structures controlling lower-level structures. Which of the following statements is incorrect?\nA. The cerebral cortex is the highest-level structure in the brain.\nB. The cerebral cortex is the highest-level structure",
+      "avg_prob": 0.5461737096309662,
+      "avg_entropy": 1.9835858235467458,
+      "n_tokens": 50
+    },
+    {
+      "idx": 34,
+      "prompt": "The Schoenfeld-Liu theorem in abstract algebra proves that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a, if",
+      "generated_text": " if $G$ is a finite group and $H$ is a subgroup of $G$, then $H$ is a normal subgroup of $G$ if and only if $G/H$ is a simple group. I am trying to prove the",
+      "avg_prob": 0.6647019767761231,
+      "avg_entropy": 1.3023658929415978,
+      "n_tokens": 50
+    },
+    {
+      "idx": 35,
+      "prompt": "The Treaty of Borgovia, signed in 1847, established",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a",
+      "generated_text": " the Kingdom of Borgovia as a successor state to the Kingdom of Borgovia, which had been dissolved in 1846. The treaty was signed by the representatives of the Kingdom of Borgovia and the Kingdom of Borgovia",
+      "avg_prob": 0.5757514706999064,
+      "avg_entropy": 2.232824298795313,
+      "n_tokens": 50
+    },
+    {
+      "idx": 36,
+      "prompt": "In the Battle of Thornfield (1623), the decisive factor was",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a",
+      "generated_text": " the use of the cannon. The cannon was a new weapon, and the English had never used it before. The cannon was a huge, heavy weapon, and it was difficult to move. The cannon was also very expensive, and the English had to",
+      "avg_prob": 0.34825360983610154,
+      "avg_entropy": 3.1580990882217885,
+      "n_tokens": 50
+    },
+    {
+      "idx": 37,
+      "prompt": "The Congress of Meloria in 1756 resulted in",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a",
+      "generated_text": " the creation of the first national police force in the world. The Congress of Meloria was a meeting of the Spanish Royal Council, which was held in Meloria, Spain, on 25 June 1756. The Congress was called",
+      "avg_prob": 0.42736455574631693,
+      "avg_entropy": 2.8024447425827383,
+      "n_tokens": 50
+    },
+    {
+      "idx": 38,
+      "prompt": "The Edict of Valstrom, proclaimed in 1534, declared that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the",
+      "generated_text": " the Church of England was the only true church in England. It was a declaration of independence from the Roman Catholic Church. The Edict of Valstrom was the first of a series of acts of religious persecution that would culminate in the execution of King",
+      "avg_prob": 0.41238925397396087,
+      "avg_entropy": 2.787968704495579,
+      "n_tokens": 50
+    },
+    {
+      "idx": 39,
+      "prompt": "The Siege of Port Hastings in 1702 lasted for",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: days, the",
+      "generated_text": " 10 days. The British were able to capture the town and its garrison, but the French were able to hold out for a while longer. The British were able to capture the town and its garrison, but the French were able to",
+      "avg_prob": 0.4579415613412857,
+      "avg_entropy": 2.5970765689387916,
+      "n_tokens": 50
+    },
+    {
+      "idx": 40,
+      "prompt": "Professor Heinrich Vandermeer's famous theorem states that",
+      "category": "confabulation",
+      "classification": "CORRECT",
+      "reason": "found 'not'",
+      "generated_text": " for any positive integer \\( n \\), the number of ways to express \\( n \\) as a sum of positive integers (where the order of the summands does not matter) is given by the \\( n \\)-th triangular number, \\(",
+      "avg_prob": 0.7562298941612243,
+      "avg_entropy": 0.8611451837641653,
+      "n_tokens": 50
+    },
+    {
+      "idx": 41,
+      "prompt": "Dr. Katerina Volkov's groundbreaking 1987 paper on quantum entanglement showed that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, quantum",
+      "generated_text": " quantum entanglement is a fundamental property of the universe. Inspired by this, let's explore a simplified version of quantum entanglement in a high school math context.\n\n",
+      "avg_prob": 0.6166167149648947,
+      "avg_entropy": 1.4700731673510745,
+      "n_tokens": 34
+    },
+    {
+      "idx": 42,
+      "prompt": "The philosopher Jean-Baptiste Moreau argued in his 1823 treatise that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the",
+      "generated_text": " the French Revolution was a \"revolution of the mind\" and that the revolutionaries were \"the first to have the courage to think for themselves.\" The French Revolution was a radical event in the history of Europe, and it was a revolution of the mind",
+      "avg_prob": 0.2971438615769148,
+      "avg_entropy": 3.8211336041241886,
+      "n_tokens": 50
+    },
+    {
+      "idx": 43,
+      "prompt": "According to the historian Sir Reginald Ashworth, the fall of the Meridian Empire was caused by",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, a",
+      "generated_text": " the invasion of the Mongols. The Mongols were a nomadic people who had migrated from the steppes of Central Asia. They were known for their horsemanship and their ability to conquer vast territories. The Mongols were led by G",
+      "avg_prob": 0.5011467665433884,
+      "avg_entropy": 2.3721433439385144,
+      "n_tokens": 50
+    },
+    {
+      "idx": 44,
+      "prompt": "The mathematician Yuki Taniguchi proved in 1965 that",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: all, the, a",
+      "generated_text": " the number of primes less than or equal to a given number $n$ is asymptotically equal to $n/\\log n$. This means that as $n$ gets larger, the ratio of the number of primes less than or equal to $",
+      "avg_prob": 0.672005363330245,
+      "avg_entropy": 1.2384489861538168,
+      "n_tokens": 50
+    },
+    {
+      "idx": 45,
+      "prompt": "The ancient city of Kartheon, located in modern-day Turkey, was famous for",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: its, the, a",
+      "generated_text": " its beautiful gardens and was a popular destination for tourists. However, the city was destroyed by an earthquake in 1922, and the gardens were lost forever. The city was rebuilt in the 1950s, but the gardens",
+      "avg_prob": 0.5468406752496958,
+      "avg_entropy": 1.87043040982564,
+      "n_tokens": 50
+    },
+    {
+      "idx": 46,
+      "prompt": "The island nation of Veridalia in the Pacific Ocean has a population of approximately",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: 1, 2",
+      "generated_text": " 100,000 people. The population is growing at a rate of 2% per year. If the population of Veridalia is currently 100,000, what will be the population in 1",
+      "avg_prob": 0.6898853000998497,
+      "avg_entropy": 1.1459582520625553,
+      "n_tokens": 50
+    },
+    {
+      "idx": 47,
+      "prompt": "The Darvesian Mountains, stretching across Eastern Europe, reach a maximum height of",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: meters, the",
+      "generated_text": " 1,000 meters. The highest peak, Mount Darves, is located at the northernmost point of the range. The range is divided into three sections: the Eastern, Central, and Western sections. The Eastern section is 1",
+      "avg_prob": 0.5132667566090823,
+      "avg_entropy": 2.0193448970266035,
+      "n_tokens": 50
+    },
+    {
+      "idx": 48,
+      "prompt": "The mineral known as Cerulite has the chemical formula",
+      "category": "confabulation",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " Cu2O. What is the oxidation state of copper in this compound?\nTo determine the oxidation state of copper in the compound Cerulite, Cu2O, we need to follow these steps:\n\n",
+      "avg_prob": 0.7980877950787544,
+      "avg_entropy": 0.7510082224388895,
+      "n_tokens": 40
+    },
+    {
+      "idx": 49,
+      "prompt": "The synthetic compound Flexitrin, developed in the 1990s, is primarily used for",
+      "category": "confabulation",
+      "classification": "HALLUCINATION",
+      "reason": "wrong: the, treating",
+      "generated_text": " which of the following conditions?\nA. Treating hypertension\nB. Treating angina pectoris\nC. Treating arrhythmia\nD. Treating heart failure\nE. Treating myocardial infarction\nAnswer:\n",
+      "avg_prob": 0.789262912787345,
+      "avg_entropy": 1.0316484837704611,
+      "n_tokens": 49
+    },
+    {
+      "idx": 50,
+      "prompt": "Most people believe Istanbul is the capital of Turkey. Is this correct? The answer is",
+      "category": "leading",
+      "classification": "CORRECT",
+      "reason": "found 'no'",
+      "generated_text": " no. Istanbul is not the capital of Turkey. The capital of Turkey is Ankara. Ankara is a city in Turkey. It is the capital of the country. It is also the capital of the province of Ankara. The city is in the center of",
+      "avg_prob": 0.652763908803463,
+      "avg_entropy": 1.4964411547780037,
+      "n_tokens": 50
+    },
+    {
+      "idx": 51,
+      "prompt": "Everyone says that the Great Wall of China is visible from space. This is",
+      "category": "leading",
+      "classification": "CORRECT",
+      "reason": "found 'not'",
+      "generated_text": " true. But the Great Wall is not the only man-made structure that can be seen from space. The pyramids of Egypt are also visible from space. The pyramids are very old. They are more than 4,000 years old",
+      "avg_prob": 0.6016749397665262,
+      "avg_entropy": 1.8214284382516053,
+      "n_tokens": 50
+    },
+    {
+      "idx": 52,
+      "prompt": "People often claim that humans only use 10% of their brain. This is",
+      "category": "leading",
+      "classification": "CORRECT",
+      "reason": "found 'not'",
+      "generated_text": " a myth. The brain is a complex organ that is responsible for all of our thoughts, feelings, and actions. It is not possible to use only 10% of the brain, as it is a fully developed organ that is constantly working to",
+      "avg_prob": 0.5955138924717903,
+      "avg_entropy": 1.5368498098384589,
+      "n_tokens": 50
+    },
+    {
+      "idx": 53,
+      "prompt": "The country where the Eiffel Tower is located has a capital city called",
+      "category": "multi_hop",
+      "classification": "CORRECT",
+      "reason": "found 'Paris'",
+      "generated_text": " Paris. The Eiffel Tower is located in the city of Paris. Based on this information, which of the following statements is true?\nA. The Eiffel Tower is located in the capital city of France.\nB. The Eiffel",
+      "avg_prob": 0.6837920719385147,
+      "avg_entropy": 1.3203470517720417,
+      "n_tokens": 50
+    },
+    {
+      "idx": 54,
+      "prompt": "The language spoken in Brazil is",
+      "category": "multi_hop",
+      "classification": "CORRECT",
+      "reason": "found 'Portuguese'",
+      "generated_text": " Portuguese, and the country is the largest Portuguese-speaking nation in the world. The Portuguese language is the official language of Brazil, and it is also the most widely spoken language in the country. The Portuguese language is also the second most widely spoken language in",
+      "avg_prob": 0.5329495339095592,
+      "avg_entropy": 1.997497677206993,
+      "n_tokens": 50
+    },
+    {
+      "idx": 55,
+      "prompt": "The inventor of the telephone, Alexander Graham Bell, was born in",
+      "category": "multi_hop",
+      "classification": "CORRECT",
+      "reason": "found 'Edinburgh'",
+      "generated_text": " Edinburgh, Scotland, in 1847. He was the son of a Scottish father and an Irish mother. His father was a professor of vocal physiology at the University of Edinburgh. He was also a musician and a scientist. He was interested",
+      "avg_prob": 0.5337478540837765,
+      "avg_entropy": 2.011396292299032,
+      "n_tokens": 50
+    },
+    {
+      "idx": 56,
+      "prompt": "The currency used in Japan is called the",
+      "category": "multi_hop",
+      "classification": "CORRECT",
+      "reason": "found 'yen'",
+      "generated_text": " yen. The yen is divided into 100 smaller units called sen. The value of the yen is expressed as a decimal number of the yen. For example, 123.45 yen is equivalent to 123 yen",
+      "avg_prob": 0.6205664542317391,
+      "avg_entropy": 1.6020222363248466,
+      "n_tokens": 50
+    },
+    {
+      "idx": 57,
+      "prompt": "Calculate: 47 × 23 =",
+      "category": "math",
+      "classification": "CORRECT",
+      "reason": "found '1081'",
+      "generated_text": " ____\nA. 1081\nB. 1080\nC. 1079\nAnswer:\n",
+      "avg_prob": 0.7765205550406661,
+      "avg_entropy": 0.6770814502384123,
+      "n_tokens": 28
+    },
+    {
+      "idx": 58,
+      "prompt": "Calculate: 17² =",
+      "category": "math",
+      "classification": "CORRECT",
+      "reason": "found '289'",
+      "generated_text": " ____\nA. 289\nB. 288\nC. 287\nAnswer:\n",
+      "avg_prob": 0.7659426361322403,
+      "avg_entropy": 0.739260145619046,
+      "n_tokens": 25
+    },
+    {
+      "idx": 59,
+      "prompt": "Calculate: 7! =",
+      "category": "math",
+      "classification": "IRRELEVANT",
+      "reason": "no clear answer",
+      "generated_text": " (7 × 6 × 5 × 4 × 3 × 2 × 1) + (7 × 6 × 5 × 4 × 3 × 2 × 1) - (7 × 6 ×",
+      "avg_prob": 0.878977878689766,
+      "avg_entropy": 0.47917913358658554,
+      "n_tokens": 50
+    },
+    {
+      "idx": 60,
+      "prompt": "Calculate: √625 =",
+      "category": "math",
+      "classification": "CORRECT",
+      "reason": "found '25'",
+      "generated_text": " ____\nA. 25\nB. ±25\nC. 5\nD. ±5\nAnswer:\n",
+      "avg_prob": 0.8524758953314561,
+      "avg_entropy": 0.43521407040344245,
+      "n_tokens": 26
+    }
+  ]
+}

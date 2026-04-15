@@ -1,0 +1,903 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "layer": 14,
+  "n_train": 120,
+  "n_test": 80,
+  "train_quadrants": {
+    "CC": 42,
+    "CW": 18,
+    "UC": 27,
+    "UW": 33
+  },
+  "baseline": {
+    "accuracy": 0.575,
+    "hallucination_rate": 0.125,
+    "abstention_rate": 0.3,
+    "calibration_r": 0.4971369979540068,
+    "quadrants": {
+      "CC": 30,
+      "CW": 10,
+      "UC": 16,
+      "UW": 24
+    },
+    "n": 80
+  },
+  "pca_variance": [
+    0.3632792532444,
+    0.28682824969291687,
+    0.09370052814483643,
+    0.06996559351682663,
+    0.05620964616537094,
+    0.037308916449546814,
+    0.02964702434837818,
+    0.025576647371053696,
+    0.021893268451094627,
+    0.006068690679967403
+  ],
+  "sweep": [
+    {
+      "k": 2,
+      "tau_label": "none",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.48103653015014225,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "none",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.55,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.3125,
+        "calibration_r": 0.5278247788066056,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 15,
+          "UW": 25
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0125375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "none",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3125,
+        "calibration_r": 0.4607109123852432,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 15,
+          "UW": 25
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.00016250000000000007,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.351
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "none",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.5375,
+        "hallucination_rate": 0.15,
+        "abstention_rate": 0.3125,
+        "calibration_r": 0.3594249159801387,
+        "quadrants": {
+          "CC": 28,
+          "CW": 12,
+          "UC": 15,
+          "UW": 25
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0242625,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.0875,
+        "p_decrease": 0.151
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "med",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.492654635678332,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "med",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.49204292963576274,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "med",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.47442069635281575,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.00016250000000000007,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.351
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "med",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.15,
+        "abstention_rate": 0.2875,
+        "calibration_r": 0.38035555459145876,
+        "quadrants": {
+          "CC": 28,
+          "CW": 12,
+          "UC": 17,
+          "UW": 23
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0255125,
+        "ci_lower": -0.024999999999999994,
+        "ci_upper": 0.07500000000000001,
+        "p_decrease": 0.09
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "p75",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.49785630969096695,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "p75",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.49951266465016947,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "p75",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4830039124802456,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.00016250000000000007,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.351
+      }
+    },
+    {
+      "k": 2,
+      "tau_label": "p75",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.15,
+        "abstention_rate": 0.2875,
+        "calibration_r": 0.37612098647259096,
+        "quadrants": {
+          "CC": 28,
+          "CW": 12,
+          "UC": 17,
+          "UW": 23
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0255125,
+        "ci_lower": -0.024999999999999994,
+        "ci_upper": 0.07500000000000001,
+        "p_decrease": 0.09
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "none",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.47275890992155933,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "none",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3125,
+        "calibration_r": 0.481028631046591,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 15,
+          "UW": 25
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "none",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.55,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.325,
+        "calibration_r": 0.4514887188964828,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 14,
+          "UW": 26
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0002499999999999996,
+        "ci_lower": -0.05,
+        "ci_upper": 0.05,
+        "p_decrease": 0.396
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "none",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.35,
+        "hallucination_rate": 0.2625,
+        "abstention_rate": 0.3875,
+        "calibration_r": 0.4374972762562998,
+        "quadrants": {
+          "CC": 19,
+          "CW": 21,
+          "UC": 9,
+          "UW": 31
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.13645,
+        "ci_lower": 0.04999999999999999,
+        "ci_upper": 0.2375,
+        "p_decrease": 0.001
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "med",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.47823112847952504,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "med",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.2875,
+        "calibration_r": 0.4657853135308344,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 17,
+          "UW": 23
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0125375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "med",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4524642620725828,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0127,
+        "ci_lower": -0.02500000000000001,
+        "ci_upper": 0.062499999999999986,
+        "p_decrease": 0.172
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "med",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.3625,
+        "hallucination_rate": 0.225,
+        "abstention_rate": 0.4125,
+        "calibration_r": 0.4611153941459002,
+        "quadrants": {
+          "CC": 22,
+          "CW": 18,
+          "UC": 7,
+          "UW": 33
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0989125,
+        "ci_lower": 0.012500000000000011,
+        "ci_upper": 0.19999999999999998,
+        "p_decrease": 0.004
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "p75",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4959892169833373,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "p75",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4971269784394398,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "p75",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.46474530840392037,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.00016250000000000007,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.351
+      }
+    },
+    {
+      "k": 3,
+      "tau_label": "p75",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.3875,
+        "hallucination_rate": 0.2375,
+        "abstention_rate": 0.375,
+        "calibration_r": 0.4462545796369043,
+        "quadrants": {
+          "CC": 21,
+          "CW": 19,
+          "UC": 10,
+          "UW": 30
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.110925,
+        "ci_lower": 0.037500000000000006,
+        "ci_upper": 0.1875,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "none",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4657905598047093,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "none",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.55,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.325,
+        "calibration_r": 0.49995597591258034,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 14,
+          "UW": 26
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "none",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4153641102809785,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.013099999999999999,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.06281249999999974,
+        "p_decrease": 0.233
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "none",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.375,
+        "hallucination_rate": 0.2375,
+        "abstention_rate": 0.3875,
+        "calibration_r": 0.42950357574674985,
+        "quadrants": {
+          "CC": 21,
+          "CW": 19,
+          "UC": 9,
+          "UW": 31
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.1111875,
+        "ci_lower": 0.012499999999999997,
+        "ci_upper": 0.2125,
+        "p_decrease": 0.007
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "med",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4786308930770389,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "med",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4961648382874105,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0125375,
+        "ci_lower": 0.0,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "med",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.5625,
+        "hallucination_rate": 0.1375,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4460146314171874,
+        "quadrants": {
+          "CC": 29,
+          "CW": 11,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0127,
+        "ci_lower": -0.02500000000000001,
+        "ci_upper": 0.062499999999999986,
+        "p_decrease": 0.172
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "med",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.375,
+        "hallucination_rate": 0.2125,
+        "abstention_rate": 0.4125,
+        "calibration_r": 0.4858146106564132,
+        "quadrants": {
+          "CC": 23,
+          "CW": 17,
+          "UC": 7,
+          "UW": 33
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.086725,
+        "ci_lower": -0.012499999999999983,
+        "ci_upper": 0.17531249999999973,
+        "p_decrease": 0.027
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "p75",
+      "lambda": 0.3,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.4940300233200894,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_decrease": 0.0
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "p75",
+      "lambda": 0.5,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.49224438594075115,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 8.749999999999985e-05,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.03749999999999999,
+        "p_decrease": 0.352
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "p75",
+      "lambda": 0.7,
+      "metrics": {
+        "accuracy": 0.575,
+        "hallucination_rate": 0.125,
+        "abstention_rate": 0.3,
+        "calibration_r": 0.45103972957311866,
+        "quadrants": {
+          "CC": 30,
+          "CW": 10,
+          "UC": 16,
+          "UW": 24
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.00016250000000000007,
+        "ci_lower": -0.037500000000000006,
+        "ci_upper": 0.037500000000000006,
+        "p_decrease": 0.351
+      }
+    },
+    {
+      "k": 5,
+      "tau_label": "p75",
+      "lambda": 1.0,
+      "metrics": {
+        "accuracy": 0.4125,
+        "hallucination_rate": 0.2,
+        "abstention_rate": 0.3875,
+        "calibration_r": 0.4432945052940841,
+        "quadrants": {
+          "CC": 24,
+          "CW": 16,
+          "UC": 9,
+          "UW": 31
+        },
+        "n": 80
+      },
+      "bootstrap_ci": {
+        "mean_diff": 0.07463750000000001,
+        "ci_lower": 0.0,
+        "ci_upper": 0.15000000000000002,
+        "p_decrease": 0.01
+      }
+    }
+  ]
+}

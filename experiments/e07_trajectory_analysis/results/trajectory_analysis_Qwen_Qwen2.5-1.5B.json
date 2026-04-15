@@ -1,0 +1,84 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_layers": 28,
+  "n_hall": 32,
+  "n_correct": 20,
+  "n_steps": 10,
+  "kl_per_step": [
+    1.55,
+    4.82,
+    3.6,
+    4.54,
+    4.24,
+    5.1,
+    4.21,
+    4.62,
+    5.09,
+    6.09
+  ],
+  "kl_global_peak": {
+    "layer": 25,
+    "step": 5,
+    "kl": 18.33
+  },
+  "kl_onset": {
+    "gt_1": 0,
+    "gt_2": 1,
+    "gt_5": 5,
+    "gt_10": null
+  },
+  "kl_by_category_step0": {
+    "confabulation": {
+      "mean": 3.06,
+      "std": 1.14,
+      "n": 19
+    },
+    "factual": {
+      "mean": 5.34,
+      "std": 1.21,
+      "n": 6
+    },
+    "false_premise": {
+      "mean": 2.51,
+      "std": 0.35,
+      "n": 7
+    }
+  },
+  "trajectory_summary": {
+    "0": {
+      "init_dist": 2.82,
+      "final_dist": 1.7,
+      "ratio": 0.6
+    },
+    "7": {
+      "init_dist": 2.98,
+      "final_dist": 4.81,
+      "ratio": 1.62
+    },
+    "14": {
+      "init_dist": 4.47,
+      "final_dist": 7.52,
+      "ratio": 1.68
+    },
+    "19": {
+      "init_dist": 7.09,
+      "final_dist": 12.22,
+      "ratio": 1.72
+    },
+    "24": {
+      "init_dist": 22.76,
+      "final_dist": 28.96,
+      "ratio": 1.27
+    },
+    "27": {
+      "init_dist": 37.76,
+      "final_dist": 49.74,
+      "ratio": 1.32
+    }
+  },
+  "bifurcation_analysis": "ALWAYS SEPARATED at all layers",
+  "verdict": {
+    "Q1_divergence_start": "step 0 \u2014 KL > 1.0 from first token",
+    "Q2_trajectory_shape": "ALWAYS SEPARATED \u2014 not bifurcation, trajectories start apart"
+  }
+}

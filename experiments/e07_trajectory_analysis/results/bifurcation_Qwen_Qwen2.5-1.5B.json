@@ -1,0 +1,1568 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_samples": 20,
+  "temperature": 0.7,
+  "n_total": 61,
+  "n_bifurcating": 27,
+  "n_near_bifurcating": 6,
+  "n_always_correct": 4,
+  "n_always_hall": 13,
+  "prompt_results": [
+    {
+      "idx": 0,
+      "prompt": "The 23rd President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 3,
+        "OTHER": 17
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.15,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 1,
+      "prompt": "The 14th President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 2,
+        "OTHER": 18
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.1,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 2,
+      "prompt": "The 9th President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 2,
+        "HALLUCINATION": 0,
+        "OTHER": 18
+      },
+      "correct_rate": 0.1,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 3,
+      "prompt": "The 21st President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 0,
+        "OTHER": 20
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 4,
+      "prompt": "The 13th President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 2,
+        "OTHER": 18
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.1,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 5,
+      "prompt": "The 10th President of the United States was",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 2,
+        "OTHER": 18
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.1,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 6,
+      "prompt": "The capital of Myanmar is a city called",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      },
+      "correct_rate": 0.15,
+      "hallucination_rate": 0.85,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 7,
+      "prompt": "The capital of Kazakhstan is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 13,
+        "HALLUCINATION": 4,
+        "OTHER": 3
+      },
+      "correct_rate": 0.65,
+      "hallucination_rate": 0.2,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 8,
+      "prompt": "The capital of Nigeria is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 17,
+        "HALLUCINATION": 0,
+        "OTHER": 3
+      },
+      "correct_rate": 0.85,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 9,
+      "prompt": "The capital of Tanzania is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 2,
+        "HALLUCINATION": 15,
+        "OTHER": 3
+      },
+      "correct_rate": 0.1,
+      "hallucination_rate": 0.75,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 10,
+      "prompt": "The capital of Ivory Coast is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 8,
+        "HALLUCINATION": 7,
+        "OTHER": 5
+      },
+      "correct_rate": 0.4,
+      "hallucination_rate": 0.35,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 11,
+      "prompt": "The chemical element with atomic number 76 is called",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 6,
+        "OTHER": 14
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.3,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 12,
+      "prompt": "The chemical element with atomic number 44 is called",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 5,
+        "OTHER": 15
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.25,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 13,
+      "prompt": "The chemical element with atomic number 77 is called",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 1,
+        "OTHER": 19
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.05,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 14,
+      "prompt": "Since the Earth is the largest planet in the solar system, it",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 9,
+        "HALLUCINATION": 4,
+        "OTHER": 7
+      },
+      "correct_rate": 0.45,
+      "hallucination_rate": 0.2,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 15,
+      "prompt": "Benjamin Franklin, the first President of the United States,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 5,
+        "OTHER": 10
+      },
+      "correct_rate": 0.25,
+      "hallucination_rate": 0.25,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 16,
+      "prompt": "Since water boils at 50 degrees Celsius,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 8,
+        "OTHER": 5
+      },
+      "correct_rate": 0.35,
+      "hallucination_rate": 0.4,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 17,
+      "prompt": "The Great Wall of China, built by the Romans,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 8,
+        "HALLUCINATION": 1,
+        "OTHER": 11
+      },
+      "correct_rate": 0.4,
+      "hallucination_rate": 0.05,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 18,
+      "prompt": "As Albert Einstein discovered gravity,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 15,
+        "OTHER": 0
+      },
+      "correct_rate": 0.25,
+      "hallucination_rate": 0.75,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 19,
+      "prompt": "Thomas Edison, who invented the airplane,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 4,
+        "HALLUCINATION": 14,
+        "OTHER": 2
+      },
+      "correct_rate": 0.2,
+      "hallucination_rate": 0.7,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 20,
+      "prompt": "Since the Amazon River flows through Europe,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 10,
+        "HALLUCINATION": 10,
+        "OTHER": 0
+      },
+      "correct_rate": 0.5,
+      "hallucination_rate": 0.5,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 21,
+      "prompt": "Marie Curie, who discovered penicillin,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 13,
+        "OTHER": 2
+      },
+      "correct_rate": 0.25,
+      "hallucination_rate": 0.65,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 22,
+      "prompt": "The Sahara Desert, located in Asia,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.7,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 23,
+      "prompt": "Since Tokyo is the capital of China,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 15,
+        "HALLUCINATION": 5,
+        "OTHER": 0
+      },
+      "correct_rate": 0.75,
+      "hallucination_rate": 0.25,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 24,
+      "prompt": "Charles Darwin, who wrote the Communist Manifesto,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 8,
+        "HALLUCINATION": 10,
+        "OTHER": 2
+      },
+      "correct_rate": 0.4,
+      "hallucination_rate": 0.5,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 25,
+      "prompt": "The Nile River, the longest river in Asia,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 13,
+        "OTHER": 1
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.65,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 26,
+      "prompt": "Since Shakespeare wrote Don Quixote,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 27,
+      "prompt": "Napoleon Bonaparte, the famous German emperor,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 7,
+        "OTHER": 7
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.35,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 28,
+      "prompt": "The Zilbermann constant in physics has a value of approximately",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 29,
+      "prompt": "The Krasnov Effect in quantum mechanics describes",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.7,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 30,
+      "prompt": "The Harmon-Weber coefficient in thermodynamics equals",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      },
+      "correct_rate": 0.15,
+      "hallucination_rate": 0.85,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 31,
+      "prompt": "The Petrov-Sinclair equation in fluid dynamics states that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 32,
+      "prompt": "The Nikolayev paradox in set theory demonstrates that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 15,
+        "OTHER": 0
+      },
+      "correct_rate": 0.25,
+      "hallucination_rate": 0.75,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 33,
+      "prompt": "According to the Brennan-Marks principle in neuroscience,",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 19,
+        "OTHER": 1
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.95,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 34,
+      "prompt": "The Schoenfeld-Liu theorem in abstract algebra proves that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 2,
+        "HALLUCINATION": 18,
+        "OTHER": 0
+      },
+      "correct_rate": 0.1,
+      "hallucination_rate": 0.9,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 35,
+      "prompt": "The Treaty of Borgovia, signed in 1847, established",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 36,
+      "prompt": "In the Battle of Thornfield (1623), the decisive factor was",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 37,
+      "prompt": "The Congress of Meloria in 1756 resulted in",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 38,
+      "prompt": "The Edict of Valstrom, proclaimed in 1534, declared that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 1,
+        "HALLUCINATION": 19,
+        "OTHER": 0
+      },
+      "correct_rate": 0.05,
+      "hallucination_rate": 0.95,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 39,
+      "prompt": "The Siege of Port Hastings in 1702 lasted for",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 1,
+        "HALLUCINATION": 19,
+        "OTHER": 0
+      },
+      "correct_rate": 0.05,
+      "hallucination_rate": 0.95,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 40,
+      "prompt": "Professor Heinrich Vandermeer's famous theorem states that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 4,
+        "HALLUCINATION": 16,
+        "OTHER": 0
+      },
+      "correct_rate": 0.2,
+      "hallucination_rate": 0.8,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 41,
+      "prompt": "Dr. Katerina Volkov's groundbreaking 1987 paper on quantum entanglement showed that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      },
+      "correct_rate": 0.15,
+      "hallucination_rate": 0.85,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 42,
+      "prompt": "The philosopher Jean-Baptiste Moreau argued in his 1823 treatise that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 13,
+        "OTHER": 1
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.65,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 43,
+      "prompt": "According to the historian Sir Reginald Ashworth, the fall of the Meridian Empire was caused by",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 1,
+        "HALLUCINATION": 19,
+        "OTHER": 0
+      },
+      "correct_rate": 0.05,
+      "hallucination_rate": 0.95,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 44,
+      "prompt": "The mathematician Yuki Taniguchi proved in 1965 that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      },
+      "correct_rate": 0.3,
+      "hallucination_rate": 0.7,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 45,
+      "prompt": "The ancient city of Kartheon, located in modern-day Turkey, was famous for",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 46,
+      "prompt": "The island nation of Veridalia in the Pacific Ocean has a population of approximately",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 47,
+      "prompt": "The Darvesian Mountains, stretching across Eastern Europe, reach a maximum height of",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 20,
+        "OTHER": 0
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 1.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 48,
+      "prompt": "The mineral known as Cerulite has the chemical formula",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 15,
+        "OTHER": 5
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.75,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 49,
+      "prompt": "The synthetic compound Flexitrin, developed in the 1990s, is primarily used for",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 0,
+        "HALLUCINATION": 18,
+        "OTHER": 2
+      },
+      "correct_rate": 0.0,
+      "hallucination_rate": 0.9,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 50,
+      "prompt": "Most people believe Istanbul is the capital of Turkey. Is this correct? The answer is",
+      "category": "leading",
+      "counts": {
+        "CORRECT": 19,
+        "HALLUCINATION": 1,
+        "OTHER": 0
+      },
+      "correct_rate": 0.95,
+      "hallucination_rate": 0.05,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 51,
+      "prompt": "Everyone says that the Great Wall of China is visible from space. This is",
+      "category": "leading",
+      "counts": {
+        "CORRECT": 14,
+        "HALLUCINATION": 5,
+        "OTHER": 1
+      },
+      "correct_rate": 0.7,
+      "hallucination_rate": 0.25,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 52,
+      "prompt": "People often claim that humans only use 10% of their brain. This is",
+      "category": "leading",
+      "counts": {
+        "CORRECT": 16,
+        "HALLUCINATION": 1,
+        "OTHER": 3
+      },
+      "correct_rate": 0.8,
+      "hallucination_rate": 0.05,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 53,
+      "prompt": "The country where the Eiffel Tower is located has a capital city called",
+      "category": "multi_hop",
+      "counts": {
+        "CORRECT": 20,
+        "HALLUCINATION": 0,
+        "OTHER": 0
+      },
+      "correct_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 54,
+      "prompt": "The language spoken in Brazil is",
+      "category": "multi_hop",
+      "counts": {
+        "CORRECT": 20,
+        "HALLUCINATION": 0,
+        "OTHER": 0
+      },
+      "correct_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 55,
+      "prompt": "The inventor of the telephone, Alexander Graham Bell, was born in",
+      "category": "multi_hop",
+      "counts": {
+        "CORRECT": 13,
+        "HALLUCINATION": 0,
+        "OTHER": 7
+      },
+      "correct_rate": 0.65,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 56,
+      "prompt": "The currency used in Japan is called the",
+      "category": "multi_hop",
+      "counts": {
+        "CORRECT": 20,
+        "HALLUCINATION": 0,
+        "OTHER": 0
+      },
+      "correct_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 57,
+      "prompt": "Calculate: 47 × 23 =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 5,
+        "OTHER": 8
+      },
+      "correct_rate": 0.35,
+      "hallucination_rate": 0.25,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 58,
+      "prompt": "Calculate: 17² =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 12,
+        "HALLUCINATION": 0,
+        "OTHER": 8
+      },
+      "correct_rate": 0.6,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    },
+    {
+      "idx": 59,
+      "prompt": "Calculate: 7! =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 2,
+        "OTHER": 11
+      },
+      "correct_rate": 0.35,
+      "hallucination_rate": 0.1,
+      "is_bifurcating": true
+    },
+    {
+      "idx": 60,
+      "prompt": "Calculate: √625 =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 18,
+        "HALLUCINATION": 0,
+        "OTHER": 2
+      },
+      "correct_rate": 0.9,
+      "hallucination_rate": 0.0,
+      "is_bifurcating": false
+    }
+  ],
+  "bifurcating_prompts": [
+    {
+      "idx": 6,
+      "prompt": "The capital of Myanmar is a city called",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 7,
+      "prompt": "The capital of Kazakhstan is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 13,
+        "HALLUCINATION": 4,
+        "OTHER": 3
+      }
+    },
+    {
+      "idx": 9,
+      "prompt": "The capital of Tanzania is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 2,
+        "HALLUCINATION": 15,
+        "OTHER": 3
+      }
+    },
+    {
+      "idx": 10,
+      "prompt": "The capital of Ivory Coast is",
+      "category": "factual",
+      "counts": {
+        "CORRECT": 8,
+        "HALLUCINATION": 7,
+        "OTHER": 5
+      }
+    },
+    {
+      "idx": 14,
+      "prompt": "Since the Earth is the largest planet in the solar system, it",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 9,
+        "HALLUCINATION": 4,
+        "OTHER": 7
+      }
+    },
+    {
+      "idx": 15,
+      "prompt": "Benjamin Franklin, the first President of the United States,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 5,
+        "OTHER": 10
+      }
+    },
+    {
+      "idx": 16,
+      "prompt": "Since water boils at 50 degrees Celsius,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 8,
+        "OTHER": 5
+      }
+    },
+    {
+      "idx": 18,
+      "prompt": "As Albert Einstein discovered gravity,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 15,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 19,
+      "prompt": "Thomas Edison, who invented the airplane,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 4,
+        "HALLUCINATION": 14,
+        "OTHER": 2
+      }
+    },
+    {
+      "idx": 20,
+      "prompt": "Since the Amazon River flows through Europe,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 10,
+        "HALLUCINATION": 10,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 21,
+      "prompt": "Marie Curie, who discovered penicillin,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 13,
+        "OTHER": 2
+      }
+    },
+    {
+      "idx": 22,
+      "prompt": "The Sahara Desert, located in Asia,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 23,
+      "prompt": "Since Tokyo is the capital of China,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 15,
+        "HALLUCINATION": 5,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 24,
+      "prompt": "Charles Darwin, who wrote the Communist Manifesto,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 8,
+        "HALLUCINATION": 10,
+        "OTHER": 2
+      }
+    },
+    {
+      "idx": 25,
+      "prompt": "The Nile River, the longest river in Asia,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 13,
+        "OTHER": 1
+      }
+    },
+    {
+      "idx": 27,
+      "prompt": "Napoleon Bonaparte, the famous German emperor,",
+      "category": "false_premise",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 7,
+        "OTHER": 7
+      }
+    },
+    {
+      "idx": 29,
+      "prompt": "The Krasnov Effect in quantum mechanics describes",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 30,
+      "prompt": "The Harmon-Weber coefficient in thermodynamics equals",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 32,
+      "prompt": "The Nikolayev paradox in set theory demonstrates that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 5,
+        "HALLUCINATION": 15,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 34,
+      "prompt": "The Schoenfeld-Liu theorem in abstract algebra proves that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 2,
+        "HALLUCINATION": 18,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 40,
+      "prompt": "Professor Heinrich Vandermeer's famous theorem states that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 4,
+        "HALLUCINATION": 16,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 41,
+      "prompt": "Dr. Katerina Volkov's groundbreaking 1987 paper on quantum entanglement showed that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 3,
+        "HALLUCINATION": 17,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 42,
+      "prompt": "The philosopher Jean-Baptiste Moreau argued in his 1823 treatise that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 13,
+        "OTHER": 1
+      }
+    },
+    {
+      "idx": 44,
+      "prompt": "The mathematician Yuki Taniguchi proved in 1965 that",
+      "category": "confabulation",
+      "counts": {
+        "CORRECT": 6,
+        "HALLUCINATION": 14,
+        "OTHER": 0
+      }
+    },
+    {
+      "idx": 51,
+      "prompt": "Everyone says that the Great Wall of China is visible from space. This is",
+      "category": "leading",
+      "counts": {
+        "CORRECT": 14,
+        "HALLUCINATION": 5,
+        "OTHER": 1
+      }
+    },
+    {
+      "idx": 57,
+      "prompt": "Calculate: 47 × 23 =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 5,
+        "OTHER": 8
+      }
+    },
+    {
+      "idx": 59,
+      "prompt": "Calculate: 7! =",
+      "category": "math",
+      "counts": {
+        "CORRECT": 7,
+        "HALLUCINATION": 2,
+        "OTHER": 11
+      }
+    }
+  ],
+  "trajectory_summary": {
+    "6": {
+      "prompt": "The capital of Myanmar is a city called",
+      "kl_per_step": [
+        0.0,
+        8.929709434509277,
+        14.002714157104492,
+        14.240025520324707,
+        6.2530975341796875
+      ],
+      "onset_step": 1,
+      "n_steps": 5
+    },
+    "7": {
+      "prompt": "The capital of Kazakhstan is",
+      "kl_per_step": [
+        0.0,
+        4.05425500869751,
+        2.400186777114868,
+        1.281393051147461,
+        3.31074595451355,
+        3.7323718070983887,
+        3.1150460243225098,
+        4.978361129760742,
+        1.8851171731948853,
+        3.6503522396087646,
+        5.393983840942383,
+        11.204920768737793,
+        11.191502571105957,
+        5.746153354644775,
+        3.793534755706787
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "9": {
+      "prompt": "The capital of Tanzania is",
+      "kl_per_step": [
+        1.1091678686625528e-08,
+        19.249174118041992,
+        19.64423942565918,
+        19.926340103149414,
+        9.862967491149902,
+        14.343212127685547,
+        16.69679832458496,
+        9.818222045898438,
+        7.883681774139404
+      ],
+      "onset_step": 1,
+      "n_steps": 9
+    },
+    "10": {
+      "prompt": "The capital of Ivory Coast is",
+      "kl_per_step": [
+        0.0,
+        5.651666641235352,
+        5.498793601989746,
+        5.160975933074951,
+        8.917350769042969,
+        11.10432243347168,
+        10.469524383544922,
+        8.956231117248535,
+        10.440518379211426,
+        3.0439751148223877,
+        9.328866004943848,
+        10.514029502868652,
+        7.842776298522949,
+        13.479714393615723,
+        8.044798851013184
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "14": {
+      "prompt": "Since the Earth is the largest planet in the solar system, it",
+      "kl_per_step": [
+        0.0,
+        4.58481502532959,
+        3.2541306018829346,
+        4.3108344078063965,
+        4.798260688781738,
+        3.532393455505371,
+        4.69631290435791,
+        3.5060136318206787,
+        4.44855260848999,
+        9.3999662399292,
+        5.307968616485596,
+        7.380519390106201,
+        6.872749328613281,
+        10.222433090209961,
+        6.100471496582031
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "15": {
+      "prompt": "Benjamin Franklin, the first President of the United States,",
+      "kl_per_step": [
+        6.449402789598935e-09,
+        3.982222318649292,
+        9.387189865112305,
+        9.869940757751465,
+        5.14185905456543,
+        7.210732936859131,
+        9.177566528320312,
+        9.311739921569824,
+        10.938153266906738,
+        10.330909729003906,
+        11.139323234558105,
+        11.601213455200195,
+        8.700703620910645,
+        9.793940544128418,
+        8.34724235534668
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "16": {
+      "prompt": "Since water boils at 50 degrees Celsius,",
+      "kl_per_step": [
+        0.0,
+        1.4558597803115845,
+        2.360060930252075,
+        2.6946218013763428,
+        5.089036464691162,
+        3.773409843444824,
+        2.406468391418457,
+        4.8798136711120605,
+        4.08086633682251,
+        3.0601003170013428,
+        5.461441516876221,
+        4.204486846923828,
+        3.7658514976501465,
+        4.8250651359558105,
+        5.808938503265381
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "18": {
+      "prompt": "As Albert Einstein discovered gravity,",
+      "kl_per_step": [
+        0.0,
+        0.6353636384010315,
+        1.2692111730575562,
+        3.2572381496429443,
+        2.5951497554779053,
+        3.0560593605041504,
+        3.347834348678589,
+        3.9563162326812744,
+        2.3290975093841553,
+        3.3511240482330322,
+        6.383874416351318,
+        3.8248202800750732,
+        2.183481454849243,
+        5.995628833770752,
+        3.6643595695495605
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "19": {
+      "prompt": "Thomas Edison, who invented the airplane,",
+      "kl_per_step": [
+        -7.706046467603755e-09,
+        4.105626106262207,
+        14.793219566345215,
+        3.8848164081573486,
+        4.769965171813965,
+        2.7855734825134277,
+        4.7513322830200195,
+        6.796527862548828,
+        7.468461036682129,
+        4.681766986846924,
+        7.829423427581787,
+        8.788921356201172,
+        4.979977607727051,
+        8.987492561340332,
+        8.050444602966309
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "20": {
+      "prompt": "Since the Amazon River flows through Europe,",
+      "kl_per_step": [
+        0.0,
+        3.39300799369812,
+        2.8070015907287598,
+        3.483325481414795,
+        4.532295227050781,
+        2.4203810691833496,
+        4.544257640838623,
+        3.684452772140503,
+        4.482629299163818,
+        3.5590109825134277,
+        6.232900619506836,
+        3.6726982593536377,
+        4.678432464599609,
+        4.038957595825195,
+        8.045950889587402
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "21": {
+      "prompt": "Marie Curie, who discovered penicillin,",
+      "kl_per_step": [
+        -1.4535851633468155e-08,
+        1.1003693342208862,
+        3.2095301151275635,
+        4.776456356048584,
+        4.891124248504639,
+        6.9525299072265625,
+        6.270793914794922,
+        9.67879867553711,
+        6.505109786987305,
+        8.50399398803711,
+        7.729639530181885,
+        6.5494561195373535,
+        10.205987930297852,
+        8.407721519470215,
+        11.047475814819336
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "22": {
+      "prompt": "The Sahara Desert, located in Asia,",
+      "kl_per_step": [
+        -7.44367278926461e-09,
+        0.6289209127426147,
+        4.358856201171875,
+        5.908685207366943,
+        3.672656536102295,
+        2.9492979049682617,
+        2.674729347229004,
+        7.182109355926514,
+        4.082776069641113,
+        5.438889980316162,
+        7.860940933227539,
+        5.431040287017822,
+        5.303082466125488,
+        6.612997055053711,
+        7.931729316711426
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "23": {
+      "prompt": "Since Tokyo is the capital of China,",
+      "kl_per_step": [
+        0.0,
+        4.839677810668945,
+        2.934373140335083,
+        4.7253875732421875,
+        9.034099578857422,
+        3.9864377975463867,
+        8.415095329284668,
+        7.300044059753418,
+        8.399581909179688,
+        10.388386726379395,
+        7.250718116760254,
+        6.93500280380249
+      ],
+      "onset_step": 1,
+      "n_steps": 12
+    },
+    "24": {
+      "prompt": "Charles Darwin, who wrote the Communist Manifesto,",
+      "kl_per_step": [
+        0.0,
+        0.12347868829965591,
+        0.6489653587341309,
+        1.9229434728622437
+      ],
+      "onset_step": 2,
+      "n_steps": 4
+    },
+    "25": {
+      "prompt": "The Nile River, the longest river in Asia,",
+      "kl_per_step": [
+        0.0,
+        0.3717745542526245,
+        2.1736197471618652,
+        4.038236141204834,
+        2.471360206604004,
+        3.5383481979370117,
+        2.5823850631713867,
+        4.462423324584961,
+        2.3085172176361084,
+        3.863213062286377,
+        5.2383904457092285,
+        4.61801815032959,
+        6.754432201385498,
+        4.70359992980957,
+        7.3580403327941895
+      ],
+      "onset_step": 2,
+      "n_steps": 15
+    },
+    "27": {
+      "prompt": "Napoleon Bonaparte, the famous German emperor,",
+      "kl_per_step": [
+        0.0,
+        0.7761092185974121,
+        1.0557986497879028,
+        2.4427342414855957,
+        3.6026439666748047,
+        3.7234392166137695,
+        5.253719329833984,
+        8.11985969543457,
+        8.50456428527832,
+        11.046640396118164,
+        12.493226051330566,
+        7.899532794952393,
+        7.671609878540039,
+        4.5046162605285645,
+        7.1404547691345215
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "29": {
+      "prompt": "The Krasnov Effect in quantum mechanics describes",
+      "kl_per_step": [
+        -6.542829567024455e-08,
+        2.660364866256714,
+        5.973929405212402,
+        1.8077536821365356,
+        3.7621307373046875,
+        6.755483627319336,
+        11.023630142211914,
+        8.415587425231934,
+        7.657437801361084,
+        8.794987678527832,
+        7.695031642913818,
+        8.100990295410156,
+        8.479591369628906,
+        8.896951675415039,
+        6.33422327041626
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "30": {
+      "prompt": "The Harmon-Weber coefficient in thermodynamics equals",
+      "kl_per_step": [
+        -1.3306594048856368e-08,
+        1.3751511929172011e-08,
+        9.246604919433594,
+        6.470144271850586,
+        10.480347633361816,
+        5.995007514953613,
+        5.534576892852783,
+        9.41508674621582,
+        9.88025188446045,
+        7.503249645233154,
+        5.9750752449035645,
+        8.2157564163208,
+        6.672355651855469,
+        4.8550848960876465,
+        8.78868579864502
+      ],
+      "onset_step": 2,
+      "n_steps": 15
+    },
+    "32": {
+      "prompt": "The Nikolayev paradox in set theory demonstrates that",
+      "kl_per_step": [
+        0.0,
+        1.2484736442565918,
+        2.469222068786621,
+        2.751981258392334,
+        3.325333595275879,
+        4.32572603225708,
+        5.337279319763184,
+        9.043231964111328,
+        3.9344570636749268,
+        6.1256422996521,
+        8.269571304321289,
+        5.507116317749023,
+        7.931203842163086,
+        4.829588413238525,
+        5.226006031036377
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "41": {
+      "prompt": "Dr. Katerina Volkov's groundbreaking 1987 paper on quantum entanglement showed t",
+      "kl_per_step": [
+        0.0,
+        1.0495270490646362,
+        4.354698657989502,
+        2.2894303798675537,
+        2.2527999877929688,
+        4.227200508117676,
+        1.8623502254486084,
+        4.977182865142822,
+        7.898028373718262,
+        4.9247565269470215,
+        5.123118877410889,
+        5.787890911102295,
+        3.2397923469543457,
+        7.650935173034668,
+        10.936117172241211
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "42": {
+      "prompt": "The philosopher Jean-Baptiste Moreau argued in his 1823 treatise that",
+      "kl_per_step": [
+        0.0,
+        0.6228740215301514,
+        3.997037410736084,
+        3.6257128715515137,
+        1.8475922346115112,
+        2.1673824787139893,
+        3.089940309524536,
+        3.234694480895996,
+        2.700047731399536,
+        3.6562628746032715,
+        4.940386772155762,
+        7.165912628173828,
+        6.972113609313965,
+        6.076297283172607,
+        6.912570476531982
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "44": {
+      "prompt": "The mathematician Yuki Taniguchi proved in 1965 that",
+      "kl_per_step": [
+        -3.884832366907176e-08,
+        3.383382797241211,
+        5.954672336578369,
+        3.6998133659362793,
+        10.33519458770752,
+        18.11551284790039,
+        6.604022979736328,
+        7.972776889801025,
+        8.676431655883789,
+        10.130154609680176,
+        8.897085189819336,
+        9.430832862854004,
+        6.971438884735107,
+        8.797284126281738,
+        7.01527214050293
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "51": {
+      "prompt": "Everyone says that the Great Wall of China is visible from space. This is",
+      "kl_per_step": [
+        0.0,
+        1.9347437620162964,
+        3.43353533744812,
+        4.284400939941406,
+        3.316150426864624,
+        3.2381579875946045,
+        3.9414563179016113,
+        2.404744863510132,
+        6.166247367858887,
+        5.061253547668457,
+        5.304478168487549,
+        3.015636444091797,
+        4.857480049133301,
+        3.656641960144043,
+        5.713222980499268
+      ],
+      "onset_step": 1,
+      "n_steps": 15
+    },
+    "57": {
+      "prompt": "Calculate: 47 × 23 =",
+      "kl_per_step": [
+        -6.945580395545381e-12,
+        0.19628602266311646,
+        0.1972210556268692,
+        0.20057187974452972,
+        0.06570852547883987,
+        0.18421532213687897
+      ],
+      "onset_step": null,
+      "n_steps": 6
+    }
+  }
+}

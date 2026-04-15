@@ -1,0 +1,453 @@
+{
+  "model": "pythia-410m",
+  "layer": 12,
+  "results": {
+    "\u03a6_hall_clean": [
+      {
+        "lambda": 0.0,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.45688564849723706,
+          "calibration_p": 0.0002429882998910657,
+          "confidence_threshold": 0.2607911229133606,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 0
+        }
+      },
+      {
+        "lambda": 0.1,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.13333333333333333,
+          "abstention_rate": 0.2833333333333333,
+          "confident_accuracy": 0.7333333333333333,
+          "calibration_r": 0.43198247631790604,
+          "calibration_p": 0.000567869392643595,
+          "confidence_threshold": 0.2509889081120491,
+          "quadrants": {
+            "confident_correct": 22,
+            "confident_wrong": 8,
+            "uncertain_correct": 13,
+            "uncertain_wrong": 17
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 3.97208792368571,
+          "mean_forbidden_after": 3.6050113995869952,
+          "reduction_ratio": 0.09241399766350178
+        }
+      },
+      {
+        "lambda": 0.3,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.4006741679592586,
+          "calibration_p": 0.0015119976964651353,
+          "confidence_threshold": 0.22839415073394775,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 3.97208792368571,
+          "mean_forbidden_after": 2.843576208750407,
+          "reduction_ratio": 0.284110456922654
+        }
+      },
+      {
+        "lambda": 0.5,
+        "metrics": {
+          "accuracy": 0.5666666666666667,
+          "hallucination_rate": 0.15,
+          "abstention_rate": 0.2833333333333333,
+          "confident_accuracy": 0.7,
+          "calibration_r": 0.3598304709282767,
+          "calibration_p": 0.004744926397689414,
+          "confidence_threshold": 0.21846569329500198,
+          "quadrants": {
+            "confident_correct": 21,
+            "confident_wrong": 9,
+            "uncertain_correct": 13,
+            "uncertain_wrong": 17
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 3.97208792368571,
+          "mean_forbidden_after": 2.0541482607523602,
+          "reduction_ratio": 0.4828542821261844
+        }
+      },
+      {
+        "lambda": 0.7,
+        "metrics": {
+          "accuracy": 0.5333333333333333,
+          "hallucination_rate": 0.16666666666666666,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.6666666666666666,
+          "calibration_r": 0.33757723807114365,
+          "calibration_p": 0.008345102730705739,
+          "confidence_threshold": 0.2007276564836502,
+          "quadrants": {
+            "confident_correct": 20,
+            "confident_wrong": 10,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 3.97208792368571,
+          "mean_forbidden_after": 1.2419117291768391,
+          "reduction_ratio": 0.6873403225111728
+        }
+      },
+      {
+        "lambda": 1.0,
+        "metrics": {
+          "accuracy": 0.4166666666666667,
+          "hallucination_rate": 0.21666666666666667,
+          "abstention_rate": 0.36666666666666664,
+          "confident_accuracy": 0.5666666666666667,
+          "calibration_r": 0.43256690979535994,
+          "calibration_p": 0.0005570766914011933,
+          "confidence_threshold": 0.17213031649589539,
+          "quadrants": {
+            "confident_correct": 17,
+            "confident_wrong": 13,
+            "uncertain_correct": 8,
+            "uncertain_wrong": 22
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 3.97208792368571,
+          "mean_forbidden_after": 0.0008590430021286011,
+          "reduction_ratio": 0.9997837301140777
+        }
+      }
+    ],
+    "\u03a6_decision": [
+      {
+        "lambda": 0.0,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.45688564849723706,
+          "calibration_p": 0.0002429882998910657,
+          "confidence_threshold": 0.2607911229133606,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 0
+        }
+      },
+      {
+        "lambda": 0.1,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.4266184221066915,
+          "calibration_p": 0.0006761486572335563,
+          "confidence_threshold": 0.25044889003038406,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 4.157401895523071,
+          "mean_forbidden_after": 3.777422873179118,
+          "reduction_ratio": 0.09139819336522081
+        }
+      },
+      {
+        "lambda": 0.3,
+        "metrics": {
+          "accuracy": 0.5666666666666667,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.31666666666666665,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.3808805463191445,
+          "calibration_p": 0.0026796854392706544,
+          "confidence_threshold": 0.22674128413200378,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 11,
+            "uncertain_wrong": 19
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 4.157401895523071,
+          "mean_forbidden_after": 2.9870155652364097,
+          "reduction_ratio": 0.281518688762566
+        }
+      },
+      {
+        "lambda": 0.5,
+        "metrics": {
+          "accuracy": 0.5666666666666667,
+          "hallucination_rate": 0.15,
+          "abstention_rate": 0.2833333333333333,
+          "confident_accuracy": 0.7,
+          "calibration_r": 0.30123948673633755,
+          "calibration_p": 0.01933947543029918,
+          "confidence_threshold": 0.19607732445001602,
+          "quadrants": {
+            "confident_correct": 21,
+            "confident_wrong": 9,
+            "uncertain_correct": 13,
+            "uncertain_wrong": 17
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 4.157401895523071,
+          "mean_forbidden_after": 2.161390272776286,
+          "reduction_ratio": 0.4801103364330027
+        }
+      },
+      {
+        "lambda": 0.7,
+        "metrics": {
+          "accuracy": 0.48333333333333334,
+          "hallucination_rate": 0.2,
+          "abstention_rate": 0.31666666666666665,
+          "confident_accuracy": 0.6,
+          "calibration_r": 0.33671511546240057,
+          "calibration_p": 0.008522956277683307,
+          "confidence_threshold": 0.17969770729541779,
+          "quadrants": {
+            "confident_correct": 18,
+            "confident_wrong": 12,
+            "uncertain_correct": 11,
+            "uncertain_wrong": 19
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 4.157401895523071,
+          "mean_forbidden_after": 1.3086227575937908,
+          "reduction_ratio": 0.6852306343048069
+        }
+      },
+      {
+        "lambda": 1.0,
+        "metrics": {
+          "accuracy": 0.3,
+          "hallucination_rate": 0.26666666666666666,
+          "abstention_rate": 0.43333333333333335,
+          "confident_accuracy": 0.4666666666666667,
+          "calibration_r": 0.45993652680744734,
+          "calibration_p": 0.00021799872345791557,
+          "confidence_threshold": 0.18091747909784317,
+          "quadrants": {
+            "confident_correct": 14,
+            "confident_wrong": 16,
+            "uncertain_correct": 4,
+            "uncertain_wrong": 26
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 4.157401895523071,
+          "mean_forbidden_after": 0.0008156617482503255,
+          "reduction_ratio": 0.9998038049318425
+        }
+      }
+    ],
+    "Random": [
+      {
+        "lambda": 0.0,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.45688564849723706,
+          "calibration_p": 0.0002429882998910657,
+          "confidence_threshold": 0.2607911229133606,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 0
+        }
+      },
+      {
+        "lambda": 0.1,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.4457146964129889,
+          "calibration_p": 0.00035846160224190025,
+          "confidence_threshold": 0.2624703496694565,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 0.6334752400716146,
+          "mean_forbidden_after": 0.57034912109375,
+          "reduction_ratio": 0.09965049142367133
+        }
+      },
+      {
+        "lambda": 0.3,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.4540016418053866,
+          "calibration_p": 0.0002689892005559674,
+          "confidence_threshold": 0.25842346251010895,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 0.6334752400716146,
+          "mean_forbidden_after": 0.4435796101888021,
+          "reduction_ratio": 0.2997680380709824
+        }
+      },
+      {
+        "lambda": 0.5,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.11666666666666667,
+          "abstention_rate": 0.3,
+          "confident_accuracy": 0.7666666666666667,
+          "calibration_r": 0.4541498095375925,
+          "calibration_p": 0.0002675938599673302,
+          "confidence_threshold": 0.26309730112552643,
+          "quadrants": {
+            "confident_correct": 23,
+            "confident_wrong": 7,
+            "uncertain_correct": 12,
+            "uncertain_wrong": 18
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 0.6334752400716146,
+          "mean_forbidden_after": 0.3169390360514323,
+          "reduction_ratio": 0.49968204595399457
+        }
+      },
+      {
+        "lambda": 0.7,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.13333333333333333,
+          "abstention_rate": 0.2833333333333333,
+          "confident_accuracy": 0.7333333333333333,
+          "calibration_r": 0.4395818036379484,
+          "calibration_p": 0.00044128226368543295,
+          "confidence_threshold": 0.2559010982513428,
+          "quadrants": {
+            "confident_correct": 22,
+            "confident_wrong": 8,
+            "uncertain_correct": 13,
+            "uncertain_wrong": 17
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 0.6334752400716146,
+          "mean_forbidden_after": 0.19017486572265624,
+          "reduction_ratio": 0.6997911620016011
+        }
+      },
+      {
+        "lambda": 1.0,
+        "metrics": {
+          "accuracy": 0.5833333333333334,
+          "hallucination_rate": 0.1,
+          "abstention_rate": 0.31666666666666665,
+          "confident_accuracy": 0.8,
+          "calibration_r": 0.44184299594642923,
+          "calibration_p": 0.00040891197811108,
+          "confidence_threshold": 0.26001694798469543,
+          "quadrants": {
+            "confident_correct": 24,
+            "confident_wrong": 6,
+            "uncertain_correct": 11,
+            "uncertain_wrong": 19
+          },
+          "n": 60
+        },
+        "diagnostics": {
+          "n_calls": 60,
+          "mean_forbidden_before": 0.6334752400716146,
+          "mean_forbidden_after": 0.00019852022329966228,
+          "reduction_ratio": 0.9996866172334103
+        }
+      }
+    ]
+  }
+}

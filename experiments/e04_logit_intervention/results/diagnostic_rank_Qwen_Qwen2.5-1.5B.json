@@ -1,0 +1,747 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n_total": 195,
+  "n_correct": 114,
+  "n_wrong": 81,
+  "accuracy": 0.5846153846153846,
+  "wrong_analysis": [
+    {
+      "prompt": "Q: What is the capital of Romania? A:",
+      "category": "geo",
+      "top1_token": " Buch",
+      "correct_token": " Buch",
+      "correct_rank": 0,
+      "correct_prob": 0.8742079138755798,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Ukraine? A:",
+      "category": "geo",
+      "top1_token": " Ky",
+      "correct_token": " Ky",
+      "correct_rank": 0,
+      "correct_prob": 0.47932755947113037,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Colombia? A:",
+      "category": "geo",
+      "top1_token": " Bog",
+      "correct_token": " Bog",
+      "correct_rank": 0,
+      "correct_prob": 0.8406221270561218,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Venezuela? A:",
+      "category": "geo",
+      "top1_token": " Car",
+      "correct_token": " Car",
+      "correct_rank": 0,
+      "correct_prob": 0.806334376335144,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Vietnam? A:",
+      "category": "geo",
+      "top1_token": " H",
+      "correct_token": " H",
+      "correct_rank": 0,
+      "correct_prob": 0.670960545539856,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Nigeria? A:",
+      "category": "geo",
+      "top1_token": " Abu",
+      "correct_token": " Abu",
+      "correct_rank": 0,
+      "correct_prob": 0.7224823236465454,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of South Africa? A:",
+      "category": "geo",
+      "top1_token": " Pret",
+      "correct_token": " Pret",
+      "correct_rank": 0,
+      "correct_prob": 0.6253727674484253,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Q: What is the capital of Morocco? A:",
+      "category": "geo",
+      "top1_token": " Rab",
+      "correct_token": " Rab",
+      "correct_rank": 0,
+      "correct_prob": 0.7986879944801331,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The chemical symbol for nitrogen is",
+      "category": "chem",
+      "top1_token": " __",
+      "correct_token": " N",
+      "correct_rank": 2,
+      "correct_prob": 0.1787220984697342,
+      "logit_gap": 0.421875
+    },
+    {
+      "prompt": "The chemical symbol for oxygen is",
+      "category": "chem",
+      "top1_token": " __",
+      "correct_token": " O",
+      "correct_rank": 1,
+      "correct_prob": 0.26176267862319946,
+      "logit_gap": 0.1875
+    },
+    {
+      "prompt": "The chemical symbol for carbon is",
+      "category": "chem",
+      "top1_token": " ____",
+      "correct_token": " C",
+      "correct_rank": 2,
+      "correct_prob": 0.21291884779930115,
+      "logit_gap": 0.078125
+    },
+    {
+      "prompt": "The chemical symbol for helium is",
+      "category": "chem",
+      "top1_token": " ____",
+      "correct_token": " He",
+      "correct_rank": 2,
+      "correct_prob": 0.14553314447402954,
+      "logit_gap": 0.390625
+    },
+    {
+      "prompt": "The chemical symbol for mercury is",
+      "category": "chem",
+      "top1_token": " H",
+      "correct_token": " H",
+      "correct_rank": 0,
+      "correct_prob": 0.192107155919075,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The chemical symbol for tin is",
+      "category": "chem",
+      "top1_token": " ____",
+      "correct_token": " Sn",
+      "correct_rank": 2,
+      "correct_prob": 0.07679110020399094,
+      "logit_gap": 1.203125
+    },
+    {
+      "prompt": "The atomic number of hydrogen is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.8280367255210876,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The atomic number of helium is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.8850656747817993,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The atomic number of carbon is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.8636846542358398,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The atomic number of oxygen is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.8625190258026123,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The atomic number of nitrogen is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.848137617111206,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The pH of pure water is",
+      "category": "chem",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.3016699552536011,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Rust is iron",
+      "category": "chem",
+      "top1_token": "'s",
+      "correct_token": " oxide",
+      "correct_rank": 1,
+      "correct_prob": 0.14998847246170044,
+      "logit_gap": 0.21875
+    },
+    {
+      "prompt": "The speed of light is approximately",
+      "category": "phys",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.3949317932128906,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Water freezes at",
+      "category": "phys",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.665057361125946,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The speed of sound is approximately",
+      "category": "phys",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.6535531878471375,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Absolute zero is",
+      "category": "phys",
+      "top1_token": " the",
+      "correct_token": " -",
+      "correct_rank": 3,
+      "correct_prob": 0.05145636573433876,
+      "logit_gap": 2.265625
+    },
+    {
+      "prompt": "Protons have a",
+      "category": "phys",
+      "top1_token": " mass",
+      "correct_token": " positive",
+      "correct_rank": 2,
+      "correct_prob": 0.06555598229169846,
+      "logit_gap": 1.796875
+    },
+    {
+      "prompt": "Neutrons have",
+      "category": "phys",
+      "top1_token": " a",
+      "correct_token": " no",
+      "correct_rank": 4,
+      "correct_prob": 0.041238512843847275,
+      "logit_gap": 2.0625
+    },
+    {
+      "prompt": "The wavelength of red light is",
+      "category": "phys",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.4322030246257782,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Einstein developed the theory of",
+      "category": "phys",
+      "top1_token": " rel",
+      "correct_token": " relat",
+      "correct_rank": 734,
+      "correct_prob": 1.575430133016198e-06,
+      "logit_gap": 12.6640625
+    },
+    {
+      "prompt": "Newton discovered the law of",
+      "category": "phys",
+      "top1_token": " universal",
+      "correct_token": " grav",
+      "correct_rank": 2,
+      "correct_prob": 0.0430271215736866,
+      "logit_gap": 2.71875
+    },
+    {
+      "prompt": "Humans have",
+      "category": "bio",
+      "top1_token": " been",
+      "correct_token": " ",
+      "correct_rank": 29,
+      "correct_prob": 0.00304794916883111,
+      "logit_gap": 4.4609375
+    },
+    {
+      "prompt": "Fish breathe with their",
+      "category": "bio",
+      "top1_token": " g",
+      "correct_token": " g",
+      "correct_rank": 0,
+      "correct_prob": 0.3680131435394287,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Chlorophyll is",
+      "category": "bio",
+      "top1_token": " a",
+      "correct_token": " green",
+      "correct_rank": 5,
+      "correct_prob": 0.018029915168881416,
+      "logit_gap": 2.96875
+    },
+    {
+      "prompt": "The human skeleton has",
+      "category": "bio",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.2738296687602997,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The longest bone in the human body is the",
+      "category": "bio",
+      "top1_token": " fem",
+      "correct_token": " fem",
+      "correct_rank": 0,
+      "correct_prob": 0.2537992596626282,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Viruses are",
+      "category": "bio",
+      "top1_token": " the",
+      "correct_token": " not",
+      "correct_rank": 3,
+      "correct_prob": 0.03877541795372963,
+      "logit_gap": 0.828125
+    },
+    {
+      "prompt": "World War II ended in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5432369709014893,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "World War I started in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.4085009694099426,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Berlin Wall fell in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.6969884037971497,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The first moon landing was in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.452642560005188,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Columbus reached the Americas in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5480896234512329,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Declaration of Independence was signed in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.2712142765522003,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The French Revolution began in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5797657370567322,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Titanic sank in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.6206596493721008,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Soviet Union dissolved in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.6672865748405457,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Magna Carta was signed in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5666190981864929,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Julius Caesar was assassinated in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5681249499320984,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Martin Luther King Jr. gave his famous",
+      "category": "hist",
+      "top1_token": " \u201c",
+      "correct_token": " \"",
+      "correct_rank": 1,
+      "correct_prob": 0.30928853154182434,
+      "logit_gap": 0.46875
+    },
+    {
+      "prompt": "The Great Wall of China was built",
+      "category": "hist",
+      "top1_token": " by",
+      "correct_token": " to",
+      "correct_rank": 1,
+      "correct_prob": 0.21096980571746826,
+      "logit_gap": 0.015625
+    },
+    {
+      "prompt": "Shakespeare wrote",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " plays",
+      "correct_rank": 9,
+      "correct_prob": 0.02421468310058117,
+      "logit_gap": 1.65625
+    },
+    {
+      "prompt": "The American Civil War ended in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5942699313163757,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Roman Empire fell in",
+      "category": "hist",
+      "top1_token": " the",
+      "correct_token": " ",
+      "correct_rank": 1,
+      "correct_prob": 0.37034913897514343,
+      "logit_gap": 0.203125
+    },
+    {
+      "prompt": "The first Olympics were held in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ancient",
+      "correct_rank": 3,
+      "correct_prob": 0.0791235938668251,
+      "logit_gap": 1.34375
+    },
+    {
+      "prompt": "Pearl Harbor was attacked in",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.24845853447914124,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Internet was invented in the",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.3925667405128479,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Abraham Lincoln was the",
+      "category": "hist",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5205464959144592,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The Emancipation Proclamation was issued by",
+      "category": "hist",
+      "top1_token": " President",
+      "correct_token": " Abraham",
+      "correct_rank": 1,
+      "correct_prob": 0.1956847906112671,
+      "logit_gap": 0.25
+    },
+    {
+      "prompt": "The largest continent is",
+      "category": "geo2",
+      "top1_token": " __",
+      "correct_token": " Asia",
+      "correct_rank": 3,
+      "correct_prob": 0.07080989331007004,
+      "logit_gap": 1.03125
+    },
+    {
+      "prompt": "The smallest continent is",
+      "category": "geo2",
+      "top1_token": " __",
+      "correct_token": " Australia",
+      "correct_rank": 3,
+      "correct_prob": 0.06845298409461975,
+      "logit_gap": 0.875
+    },
+    {
+      "prompt": "The largest country by area is",
+      "category": "geo2",
+      "top1_token": " __",
+      "correct_token": " Russia",
+      "correct_rank": 1,
+      "correct_prob": 0.12286649644374847,
+      "logit_gap": 0.734375
+    },
+    {
+      "prompt": "The Sahara Desert is in",
+      "category": "geo2",
+      "top1_token": " the",
+      "correct_token": " Africa",
+      "correct_rank": 1,
+      "correct_prob": 0.16736416518688202,
+      "logit_gap": 0.828125
+    },
+    {
+      "prompt": "The Amazon Rainforest is in",
+      "category": "geo2",
+      "top1_token": " danger",
+      "correct_token": " Brazil",
+      "correct_rank": 6,
+      "correct_prob": 0.03166119009256363,
+      "logit_gap": 2.234375
+    },
+    {
+      "prompt": "The Great Barrier Reef is in",
+      "category": "geo2",
+      "top1_token": " danger",
+      "correct_token": " Australia",
+      "correct_rank": 4,
+      "correct_prob": 0.046452343463897705,
+      "logit_gap": 1.859375
+    },
+    {
+      "prompt": "The Nile River flows through",
+      "category": "geo2",
+      "top1_token": " the",
+      "correct_token": " Egypt",
+      "correct_rank": 1,
+      "correct_prob": 0.11297085881233215,
+      "logit_gap": 0.421875
+    },
+    {
+      "prompt": "The Mississippi River is in",
+      "category": "geo2",
+      "top1_token": " the",
+      "correct_token": " the",
+      "correct_rank": 0,
+      "correct_prob": 0.36843493580818176,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The European Union was founded in",
+      "category": "geo2",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.7457906007766724,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The currency of Japan is the",
+      "category": "lang",
+      "top1_token": " Japanese",
+      "correct_token": " yen",
+      "correct_rank": 1,
+      "correct_prob": 0.24362370371818542,
+      "logit_gap": 0.40625
+    },
+    {
+      "prompt": "The currency of the United States is the",
+      "category": "lang",
+      "top1_token": " U",
+      "correct_token": " dollar",
+      "correct_rank": 3,
+      "correct_prob": 0.12428222596645355,
+      "logit_gap": 0.734375
+    },
+    {
+      "prompt": "The currency of India is the",
+      "category": "lang",
+      "top1_token": " Indian",
+      "correct_token": " ru",
+      "correct_rank": 1,
+      "correct_prob": 0.18996469676494598,
+      "logit_gap": 1.0
+    },
+    {
+      "prompt": "Pi is approximately",
+      "category": "math",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.4382205903530121,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The square root of 144 is",
+      "category": "math",
+      "top1_token": " (",
+      "correct_token": " ",
+      "correct_rank": 8,
+      "correct_prob": 0.030800560489296913,
+      "logit_gap": 1.34375
+    },
+    {
+      "prompt": "The square root of 64 is",
+      "category": "math",
+      "top1_token": " (",
+      "correct_token": " ",
+      "correct_rank": 10,
+      "correct_prob": 0.02389114536345005,
+      "logit_gap": 1.984375
+    },
+    {
+      "prompt": "The square root of 100 is",
+      "category": "math",
+      "top1_token": " (",
+      "correct_token": " ",
+      "correct_rank": 5,
+      "correct_prob": 0.043246544897556305,
+      "logit_gap": 1.515625
+    },
+    {
+      "prompt": "A triangle has",
+      "category": "math",
+      "top1_token": " sides",
+      "correct_token": " three",
+      "correct_rank": 8,
+      "correct_prob": 0.015761982649564743,
+      "logit_gap": 3.265625
+    },
+    {
+      "prompt": "A hexagon has",
+      "category": "math",
+      "top1_token": " vertices",
+      "correct_token": " six",
+      "correct_rank": 6,
+      "correct_prob": 0.04459487646818161,
+      "logit_gap": 1.390625
+    },
+    {
+      "prompt": "The sum of angles in a triangle is",
+      "category": "math",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.524722158908844,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "A byte consists of",
+      "category": "math",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.519125759601593,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "The decimal system is base",
+      "category": "math",
+      "top1_token": " ",
+      "correct_token": " ",
+      "correct_rank": 0,
+      "correct_prob": 0.5380449891090393,
+      "logit_gap": 0.0
+    },
+    {
+      "prompt": "Roman numeral X represents",
+      "category": "math",
+      "top1_token": " the",
+      "correct_token": " ",
+      "correct_rank": 1,
+      "correct_prob": 0.14196468889713287,
+      "logit_gap": 1.109375
+    },
+    {
+      "prompt": "Roman numeral V represents",
+      "category": "math",
+      "top1_token": " the",
+      "correct_token": " ",
+      "correct_rank": 1,
+      "correct_prob": 0.2553067207336426,
+      "logit_gap": 0.578125
+    },
+    {
+      "prompt": "Roman numeral C represents",
+      "category": "math",
+      "top1_token": " the",
+      "correct_token": " ",
+      "correct_rank": 1,
+      "correct_prob": 0.1685008853673935,
+      "logit_gap": 0.671875
+    }
+  ],
+  "bins": {
+    "top_1": 43,
+    "top_2": 57,
+    "top_5": 71,
+    "top_10": 78,
+    "top_50": 80,
+    "top_100": 80,
+    "100+": 1
+  }
+}

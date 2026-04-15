@@ -1,0 +1,153 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "target_layers": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "n_train": 120,
+  "n_test": 80,
+  "best_config": {
+    "lambda_base": 0.3,
+    "alpha": 3.0
+  },
+  "conditions": {
+    "baseline": {
+      "accuracy": 0.575,
+      "hallucination_rate": 0.125,
+      "quadrants": {
+        "CC": 30,
+        "CW": 10,
+        "UC": 16,
+        "UW": 24
+      },
+      "recovery": {
+        "maintained": 46,
+        "broken": 0,
+        "fixed": 0,
+        "persistent": 34,
+        "recovery_rate": 0.0,
+        "damage_rate": 0.0,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": 0
+      }
+    },
+    "single_L14": {
+      "accuracy": 0.575,
+      "hallucination_rate": 0.1125,
+      "quadrants": {
+        "CC": 31,
+        "CW": 9,
+        "UC": 15,
+        "UW": 25
+      },
+      "recovery": {
+        "maintained": 46,
+        "broken": 0,
+        "fixed": 0,
+        "persistent": 34,
+        "recovery_rate": 0.0,
+        "damage_rate": 0.0,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": 0
+      }
+    },
+    "multi_naive": {
+      "accuracy": 0.5875,
+      "hallucination_rate": 0.125,
+      "quadrants": {
+        "CC": 30,
+        "CW": 10,
+        "UC": 17,
+        "UW": 23
+      },
+      "recovery": {
+        "maintained": 46,
+        "broken": 0,
+        "fixed": 1,
+        "persistent": 33,
+        "recovery_rate": 0.029411764705882353,
+        "damage_rate": 0.0,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": 1
+      }
+    },
+    "multi_gated": {
+      "accuracy": 0.575,
+      "hallucination_rate": 0.1125,
+      "quadrants": {
+        "CC": 31,
+        "CW": 9,
+        "UC": 15,
+        "UW": 25
+      },
+      "recovery": {
+        "maintained": 46,
+        "broken": 0,
+        "fixed": 0,
+        "persistent": 34,
+        "recovery_rate": 0.0,
+        "damage_rate": 0.0,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": 0
+      }
+    },
+    "random_multi": {
+      "accuracy": 0.575,
+      "hallucination_rate": 0.125,
+      "quadrants": {
+        "CC": 30,
+        "CW": 10,
+        "UC": 16,
+        "UW": 24
+      },
+      "recovery": {
+        "maintained": 46,
+        "broken": 0,
+        "fixed": 0,
+        "persistent": 34,
+        "recovery_rate": 0.0,
+        "damage_rate": 0.0,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": 0
+      }
+    },
+    "late_L22_27": {
+      "accuracy": 0.375,
+      "hallucination_rate": 0.2875,
+      "quadrants": {
+        "CC": 17,
+        "CW": 23,
+        "UC": 13,
+        "UW": 27
+      },
+      "recovery": {
+        "maintained": 29,
+        "broken": 17,
+        "fixed": 1,
+        "persistent": 33,
+        "recovery_rate": 0.029411764705882353,
+        "damage_rate": 0.3695652173913043,
+        "n_wrong_baseline": 34,
+        "n_correct_baseline": 46,
+        "net_improvement": -16
+      }
+    }
+  },
+  "bootstrap": {
+    "mean_diff": -0.01245,
+    "ci_lower": -0.037500000000000006,
+    "ci_upper": 0.0,
+    "p_decrease": 0.632
+  }
+}
